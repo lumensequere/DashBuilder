@@ -1,0 +1,486 @@
+[
+	{
+		"key": "0",
+		"name": "",
+		"filter": "",
+		"type": ""
+	},
+	{
+		"key": "mdr2",
+		"name": "Service Team",
+		"filter": "activity_service_team",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Business Partner",
+		"filter": "activity_activity_partner",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Customer Number",
+		"filter": "activity_customer",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Person Responsible",
+		"filter": "activity_person_resp",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Sales Organization",
+		"filter": "activity_sales_org",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Service Organization",
+		"filter": "activity_service_org",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Process Type",
+		"filter": "activity_process_type",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Priority",
+		"filter": "activity_priority",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Result",
+		"filter": "activity_result_desc",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Status",
+		"filter": "activity_status",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Status Description",
+		"filter": "activity_status_desc",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Reason Code",
+		"filter": "activity_reason_code",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Reason",
+		"filter": "activity_reason",
+		"type": "input"
+	},
+	{
+		"key": "mdr2",
+		"name": "Rating",
+		"filter": "activity_rating",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Delivery Unit",
+		"filter": "activity_delivery_unit",
+		"type": "select"
+	},
+	{
+		"key": "mdr2",
+		"name": "Category",
+		"filter": "activity_cat",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Case Type (ZS01 or ZS02)",
+		"filter": "case_type",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Service Organization",
+		"filter": "service_org",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Sales Organization",
+		"filter": "sales_org",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Service Team",
+		"filter": "service_team",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Customer Number",
+		"filter": "customer_bp_id",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Global Ultimate",
+		"filter": "global_ultimate_id",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Country",
+		"filter": "country",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Priority",
+		"filter": "priority",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Rating",
+		"filter": "rating",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Status",
+		"filter": "status",
+		"type": "select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Case Category",
+		"filter": "category",
+		"type": "select"
+	},
+	{
+		"key": "all",
+		"name": "Source",
+		"filter": "&source",
+		"options": [
+			{
+				"name": "ICP",
+				"value": "icp"
+			},
+			{
+				"name": "ICT",
+				"value": "ict"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Refresh Interval",
+		"filter": "&refreshInterval",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Flip Interval",
+		"filter": "&flipInterval",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Title",
+		"filter": "&title",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Mask Data",
+		"filter": "&MaskData",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Zoom",
+		"filter": "&zoom",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Layout",
+		"filter": "&layout",
+		"options": [
+			{
+				"name": "Blue",
+				"value": "blue"
+			},
+			{
+				"name": "Dark",
+				"value": "dark"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Hide Priority",
+		"filter": "&hidePrio",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Sorter",
+		"filter": "&sorter",
+		"options": [
+			{
+				"Name": "Priority Ascending",
+				"value": "prioKey/asc"
+			},
+			{
+				"name": "Priority Descending",
+				"value": "prioKey/desc"
+			},
+			{
+				"name": "Ref. Customer Ascending",
+				"value": "refCustSort/asc"
+			},
+			{
+				"name": "Ref. Customer Descending",
+				"value": "refCustSort/desc"
+			},
+			{
+				"name": "Customer Ascending",
+				"value": "customer/asc"
+			},
+			{
+				"name": "Customer Descending",
+				"value": "customer/desc"
+			},
+			{
+				"name": "Issue Ascending",
+				"value": "issue/asc"
+			},
+			{
+				"name": "Issue Descending",
+				"value": "issue/desc"
+			},
+			{
+				"name": "Due Time Ascending",
+				"value": "dueTimeKey/asc"
+			},
+			{
+				"name": "Due Time Descending",
+				"value": "dueTimeKey/desc"
+			},
+			{
+				"name": "Rating Ascending",
+				"value": "ratingKey/asc"
+			},
+			{
+				"name": "Rating Descending",
+				"value": "ratingKey/desc"
+			},
+			{
+				"name": "Status Ascending",
+				"value": "statusKey/asc"
+			},
+			{
+				"name": "Status Descending",
+				"value": "statusKey/desc"
+			},
+			{
+				"name": "Employee Ascending",
+				"value": "employee/asc"
+			},
+			{
+				"name": "Employee Descending",
+				"value": "employee/desc"
+			},
+			{
+				"name": "Country Ascending",
+				"value": "country/asc"
+			},
+			{
+				"name": "Country Descending",
+				"value": "country/desc"
+			},
+			{
+				"name": "Delivery Unit Ascending",
+				"value": "delUnitText/asc"
+			},
+			{
+				"name": "Delivery Unit Descending",
+				"value": "delUnitText/desc"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Service Team Visible",
+		"filter": "&ServiceTeamVisible",
+		"options": [
+			{
+				"name": "True",
+				"value": "true"
+			},
+			{
+				"name": "False",
+				"value": "false"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Display Date",
+		"filter": "&disp_date",
+		"options": [
+			{
+				"name": "Go Live",
+				"value": "gl"
+			},
+			{
+				"name": "Last Changed",
+				"value": "lc"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Responsible Empty Only",
+		"filter": "&resp_empty_only",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Run Title",
+		"filter": "&run_title",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "List View",
+		"filter": "&listView",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Created Now Weeks",
+		"filter": "&created",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Created Now Days",
+		"filter": "&created",
+		"type": "input"
+	},
+	{
+		"key": "all",
+		"name": "Display Name",
+		"filter": "&disp_name",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Display Phase",
+		"filter": "&disp_phase",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	},
+	{
+		"key": "all",
+		"name": "Top Issues",
+		"filter": "&top_issues",
+		"options": [
+			{
+				"name": "Yes",
+				"value": "yes"
+			},
+			{
+				"name": "No",
+				"value": "no"
+			}
+		],
+		"type": "options"
+	}
+]

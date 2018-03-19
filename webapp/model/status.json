@@ -1,0 +1,442 @@
+[
+	{
+		"name": "New",
+		"value": "E0001",
+		"group": "PERC"
+	},
+	{
+		"name": "In Process",
+		"value": "E0003",
+		"group": "PERC"
+	},
+	{
+		"name": "Planned",
+		"value": "E0002",
+		"group": "PERC"
+	},
+	{
+		"name": "In Process PERC",
+		"value": "E0003",
+		"group": "PERC"
+	},
+	{
+		"name": "In Process OP Team",
+		"value": "E0004",
+		"group": "PERC"
+	},
+	{
+		"name": "Postponed",
+		"value": "E0005",
+		"group": "PERC"
+	},
+	{
+		"name": "Cancelled",
+		"value": "E0006",
+		"group": "PERC"
+	},
+	{
+		"name": "Completed",
+		"value": "E0007",
+		"group": "PERC"
+	},
+	{
+		"name": "Prepared",
+		"value": "E0008",
+		"group": "PERC"
+	},
+	{
+		"name": "Review Performed",
+		"value": "E0009",
+		"group": "PERC"
+	},
+	{
+		"name": "Minutes Generated",
+		"value": "E0010",
+		"group": "PERC"
+	},
+	{
+		"name": "Surveyed",
+		"value": "E0011",
+		"group": "PERC"
+	},
+	{
+		"name": "New",
+		"value": "E0001",
+	"group": "CIC Request"
+	},
+	{
+		"name": "In Process",
+		"value": "E0002",
+		"group": "CIC Request"
+	},
+	{
+		"name": "Completed",
+		"value": "E0003",
+		"group": "CIC Request"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Escal Backoffice Request"
+	},
+	{
+		"name": "In Process",
+		"value": "E0011",
+		"group": "Escal Backoffice Request"
+	},
+	{
+		"name": "Confirmed",
+		"value": "E0012",
+		"group": "Escal Backoffice Request"
+	},
+	{
+		"name": "Completed",
+		"value": "E0013",
+		"group": "Escal Backoffice Request"
+	},
+	{
+		"name": "Cancelled",
+		"value": "E0014",
+		"group": "Escal Backoffice Request"
+	},
+	{
+		"name": "Open",
+		"value": "E0001",
+		"group": "Solman Task"
+	},
+	{
+		"name": "In Process",
+		"value": "E0002",
+		"group": "Solman Task"
+	},
+	{
+		"name": "Draft",
+		"value": "E0003",
+		"group": "Solman Task"
+	},
+	{
+		"name": "Rejected",
+		"value": "E0004",
+		"group": "Solman Task"
+	},
+	{
+		"name": "Completed",
+		"value": "E0005",
+		"group": "Solman Task"
+	},
+	{
+		"name": "New",
+		"value": "E0001",
+		"group": "Service and Support Report"
+	},
+	{
+		"name": "In Process",
+		"value": "E0002",
+		"group": "Service and Support Report"
+	},
+	{
+		"name": "Completed",
+		"value": "E0003",
+		"group": "Service and Support Report"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process Backoffice",
+		"value": "E0011",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "Responsible's Action",
+		"value": "E0012",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "Confirmed",
+		"value": "E0013",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "Completed",
+		"value": "E0014",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process SAC",
+		"value": "E0018",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In MCC Dep Rooms",
+		"value": "E0019",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process CIM",
+		"value": "E0020",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process IEM",
+		"value": "E0021",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process CIC",
+		"value": "E0022",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process COM",
+		"value": "E0023",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process PS",
+		"value": "E0024",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "In Process IMS",
+		"value": "E0025",
+		"group": "Req. Backoffice Assistance"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Request for Assistance"
+	},
+	{
+		"name": "In Process",
+		"value": "E0011",
+		"group": "Request for Assistance"
+	},
+	{
+		"name": "Confirmed",
+		"value": "E0012",
+		"group": "Request for Assistance"
+	},
+	{
+		"name": "Completed",
+		"value": "E0013",
+		"group": "Request for Assistance"
+	},
+	{
+		"name": "Cancelled",
+		"value": "E0014",
+		"group": "Request for Assistance"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "In Process Backoffice",
+		"value": "E0011",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "Reponsible's Action",
+		"value": "E0012",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "Confirmed",
+		"value": "E0013",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "Completed",
+		"value": "E0014",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "In Process SAC",
+		"value": "E0018",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "In Process CIM",
+		"value": "E0020",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "In Process IEM",
+		"value": "E0021",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "In Process CIC",
+		"value": "E0022",
+		"group": "Req. onsite service delivery"
+	},
+	{
+		"name": "New",
+		"value": "E0001",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "Switch",
+		"value": "E0005",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "In Process",
+		"value": "E0006",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "Opportunity Created",
+		"value": "E0007",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "No Opportunity created",
+		"value": "E0008",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "Resumn",
+		"value": "E0010",
+		"group": "Customer Screening"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Task"
+	},
+	{
+		"name": "In Process",
+		"value": "E0011",
+		"group": "Task"
+	},
+	{
+		"name": "Completed",
+		"value": "E0012",
+		"group": "Task"
+	},
+	{
+		"name": "In Process SAC",
+		"value": "E0013",
+		"group": "Task"
+	},
+	{
+		"name": "New",
+		"value": "E0010",
+		"group": "Escalation Request"
+	},
+	{
+		"name": "In Process",
+		"value": "E0011",
+		"group": "Escalation Request"
+	},
+	{
+		"name": "Accepted",
+		"value": "E0012",
+		"group": "Escalation Request"
+	},
+	{
+		"name": "Rejected",
+		"value": "E0013",
+		"group": "Escalation Request"
+	},
+	{
+		"name": "Open",
+		"value": "E0001",
+		"group": "General Activity"
+	},
+	{
+		"name": "In process",
+		"value": "E0002",
+		"group": "General Activity"
+	},
+	{
+		"name": "Completed",
+		"value": "E0003",
+		"group": "General Activity"
+	},
+	{
+		"name": "Cancelled",
+		"value": "E0007",
+		"group": "General Activity"
+	},
+	{
+		"name": "Completed automatically",
+		"value": "E0010",
+		"group": "General Activity"
+	},
+	{
+		"name": "New",
+		"value": "New",
+		"group": "ZS02"
+	},
+	{
+		"name": "Open / New",
+		"value": "Open / New",
+		"group": "ZS02"
+	},
+	{
+		"name": "In Process",
+		"value": "In Process",
+		"group": "ZS02"
+	},
+	{
+		"name": "In Escalation",
+		"value": "In Escalation",
+		"group": "ZS02"
+	},
+	{
+		"name": "In Management Review",
+		"value": "In Management Review",
+		"group": "ZS02"
+	},
+	{
+		"name": "Closed",
+		"value": "Closed",
+		"group": "ZS02"
+	},
+	{
+		"name": "New",
+		"value": "Z1",
+		"group": "Top Issues"
+	},
+	{
+		"name": "In Process",
+		"value": "Z2",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Completed",
+		"value": "Z3",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Rejected",
+		"value": "Z4",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Committed/Approved",
+		"value": "Z5",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Switch",
+		"value": "Z6",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Responsible Action",
+		"value": "Z7",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Draft",
+		"value": "Z8",
+		"group": "Top Issues"
+	}
+]

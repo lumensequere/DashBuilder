@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Green",
+		"value": "G",
+		"group": "Activities"
+	},
+	{
+		"name": "Yellow",
+		"value": "Y",
+		"group": "Activities"
+	},
+	{
+		"name": "Red",
+		"value": "R",
+		"group": "Activities"
+	},
+	{
+		"name": "Green",
+		"value": "A",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Yellow",
+		"value": "B",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Red",
+		"value": "C",
+		"group": "Top Issues"
+	},
+	{
+		"name": "Green",
+		"value": "Green",
+		"group": "Cases"
+	},
+	{
+		"name": "Yellow",
+		"value": "Yellow",
+		"group": "Cases"
+	},
+	{
+		"name": "Red",
+		"value": "Red",
+		"group": "Cases"
+	}
+]

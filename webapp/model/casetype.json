@@ -1,0 +1,12 @@
+{
+	"type": [
+		{
+			"name": "Escalation Case",
+			"id": "ZS01"
+		},
+		{
+			"name": "Engagement Case",
+			"id": "ZS02"
+		}
+	]
+}

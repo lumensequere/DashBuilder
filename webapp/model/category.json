@@ -1,0 +1,122 @@
+[
+	{
+		"name": "AGS:ActEmbMsg",
+		"value": "ZB9"
+	},
+	{
+		"name": "AGS:BOSAP BO",
+		"value": "ZZM"
+	},
+	{
+		"name": "AGS:CriticalPrio1Ms",
+		"value": "ZZI"
+	},
+	{
+		"name": "AGS:CriticalPrio2Ms",
+		"value": "ZZJ"
+	},
+	{
+		"name": "AGS:EnterprSuppMsg",
+		"value": "ZZE"
+	},
+	{
+		"name": "AGS:GoLive Endanger",
+		"value": "Z90"
+	},
+	{
+		"name": "AGS:MaxAttentionMsg",
+		"value": "Z93"
+	},
+	{
+		"name": "AGS:MCS BO Escal.",
+		"value": "ZB2"
+	},
+	{
+		"name": "AGS:MCSEscalMsg",
+		"value": "ZZG"
+	},
+	{
+		"name": "AGS:Production Down",
+		"value": "Z91"
+	},
+	{
+		"name": "AGS:SafeguardingMsg",
+		"value": "ZZF"
+	},
+	{
+		"name": "AGS:StandardCustMsg",
+		"value": "ZZH"
+	},
+	{
+		"name": "MCC Customer Visit",
+		"value": "ZVM"
+	},
+	{
+		"name": "AGS:MCC",
+		"value": "ZB4"
+	},
+	{
+		"name": "AGS:Enterprise Supp",
+		"value": "ZSF"
+	},
+	{
+		"name": "AGS:Embedded Support",
+		"value": "ZZN"
+	},
+	{
+		"name": "AGS:Frontoffice Sup.",
+		"value": "Z88"
+	},
+	{
+		"name": "DBS:PositioningSup",
+		"value": "ZZA"
+	},
+	{
+		"name": "Q-Gate Support",
+		"value": "ZB2"
+	},
+	{
+		"name": "DBS:PGA",
+		"value": "ZB5"
+	},
+	{
+		"name": "AGS:Cust/Proj.Eval.",
+		"value": "Z83"
+	},
+	{
+		"name": "AGS:RAPP",
+		"value": "ZY3"
+	},
+	{
+		"name": "AGS:RemoteSystAnaly",
+		"value": "Z84"
+	},
+	{
+		"name": "AGS:ServPln/RskMigRv",
+		"value": "Z86"
+	},
+	{
+		"name": "AGS:Solution Manag",
+		"value": "ZA7"
+	},
+	{
+		"name": "AGS: Active Embedded",
+		"value": "ZAE"
+	},
+	{
+		"name": "AGS: MaxAttention",
+		"value": "Z72"
+	},
+	{
+		"name": "AGS: Enterprise Supp",
+		"value": "ZSF"
+	},
+	{
+		"name": "AGS:PE Prospect",
+		"value": "ZSS"
+	},
+	{
+		"name": "AGS:PSLE",
+		"value": "ZID"
+	}
+]

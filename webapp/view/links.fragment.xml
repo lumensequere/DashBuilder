@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="Useful Links" id="linksDialog">
+		<content>
+			<VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+				<items>
+					<HBox class="sapUiMediumMarginTopBottom">
+						<Label text="DBS MCC Tools:" class="sapUiTinyMarginBegin"/>
+						<Link text="Click here" target="_blank" href="https://jam4.sapjam.com/groups/5LnWdLXIx1B6iNVAa24kiC/overview_page/8fqQOTVX7JN2x1D21tPyZl" class="sapUiTinyMarginBegin"/>
+					</HBox>
+				</items>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Close" press="closeLinksDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

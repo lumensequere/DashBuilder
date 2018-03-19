@@ -1,0 +1,122 @@
+[
+	{
+		"name": "",
+		"key": "mdr0",
+		"id": "0"
+	},
+	{
+		"name": "Business Down",
+		"key": "mdr1",
+		"id": "1"
+	},
+	{
+		"name": "Activities",
+		"key": "mdr2",
+		"id": "2",
+		"options": [
+			{
+				"name": "PERC",
+				"type": "ZS88"
+			},
+			{
+				"name": "CIC Request",
+				"type": "ZS53"
+			},
+			{
+				"name": "Escal Backoffice Request",
+				"type": "ZS51"
+			},
+			{
+				"name": "Solman Task",
+				"type": "ZS49"
+			},
+			{
+				"name": "Service and Support Report",
+				"type": "ZS47"
+			},
+			{
+				"name": "Request for Backoffice Assistance",
+				"type": "ZS46"
+			},
+			{
+				"name": "Request for Assistance",
+				"type": "ZS43"
+			},
+			{
+				"name": "Requests for onsite service delivery",
+				"type": "ZS42"
+			},
+			{
+				"name": "Customer Screening",
+				"type": "ZS41"
+			},
+			{
+				"name": "Task",
+				"type": "ZS35"
+			},
+			{
+				"name": "Escalation Request",
+				"type": "ZS31"
+			},
+			{
+				"name": "General Activity",
+				"type": "ZS03"
+			}
+		]
+	},
+	{
+		"name": "Top Issues",
+		"key": "mdr3",
+		"id": "3"
+	},
+	{
+		"name": "Service Orders Items",
+		"key": "mdr4",
+		"id": "4"
+	},
+	{
+		"name": "Service Orders Item 10",
+		"key": "mdr5",
+		"id": "5"
+	},
+	{
+		"name": "Milestones",
+		"key": "mdr6",
+		"id": "6"
+	},
+	{
+		"name": "Cases",
+		"key": "mdr7",
+		"id": "7"
+	},
+	{
+		"name": "Customer Map",
+		"key": "mdr8",
+		"id": "8"
+	},
+	{
+		"name": "Incidents",
+		"key": "mdr9",
+		"id": "9"
+	},
+	{
+		"name": "System Down Monitor",
+		"key": "mdr11",
+		"id": "11"
+	},
+	{
+		"name": "Service Requests",
+		"key": "mdr12",
+		"id": "12"
+	},
+	{
+		"name": "Complaints",
+		"key": "mdr13",
+		"id": "13"
+	},
+	{
+		"name": "Opportunities",
+		"key": "mdr22",
+		"id": "22"
+	}
+]

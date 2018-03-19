@@ -1,0 +1,104 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.View1" height="100%">
+	<App id="myApp" backgroundOpacity="0" height="100%">
+		<pages>
+			<Page title="Dashboard Builder" id="mainPage" width="100%" enableScrolling="false" height="100%">
+			<subHeader>
+			    <Bar id="__bar0" width="100%" design="Header">
+			        <contentMiddle>
+			            <Button text="Analyze" width="100px" id="__button0" press="onPress">
+				            <customData>
+				                <core:CustomData id="__data4" key="target" value="analyzePage"/>
+				            </customData>
+			            </Button>
+			            <Button text="Build" width="100px" id="__button1" press="onPress">
+				            <customData>
+				                <core:CustomData id="__data6" key="target" value="buildPage"/>
+				            </customData>
+			            </Button>
+			        </contentMiddle>
+			    </Bar>
+			</subHeader>
+			<content>
+			    <NavContainer id="myContainer" class="sapUiTinyMargin" width="auto" height="100%">
+			        <pages>
+			        	<Page title="Page" id="overviewPage" showFooter="false" showHeader="false" enableScrolling="false" height="100%">
+			                <content>
+			                	<VBox width="100%" direction="Column" id="__vbox1" height="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
+			                    <items>
+				                    <Label text="Welcome to MCC Dashboard Builder" width="100%" id="__label1" design="Bold"/>
+				                    <Label text="Use the buttons at the top of the page to navigate between URL analyzing and building." width="100%" id="__label2" class="sapUiMediumMarginBottom"/>
+				                    <Label text="For more information about dashboard creation, best practices and examples, please have a look at DBS MCC Tools Jam Page. You can find the link at the links section at the footer of this page." width="100%" wrapping="true" id="moreInfoLabel"/>
+			                    </items>
+			                    </VBox>
+			                </content>
+			            </Page>
+			            <Page title="Analyze" id="analyzePage" showSubHeader="false" showHeader="false" showFooter="false" enableScrolling="true" height="100%">
+			                <content>
+			                    <VBox id="__vbox0" direction="Column" alignContent="Center" alignItems="Center" width="auto" renderType="Bare">
+			                        <items>
+			                            <Label text="Insert URL:" width="100%" id="__label0" design="Bold"/>
+			                            <TextArea id="inputBox" cols="100" wrapping="Soft" width="100%" placeholder="e.g. https://pgp.wdf.sap.corp/sap/bc/ui5_ui5/sap/zs_dashboard/f/mdr2_f.html?&amp;filter=..." rows="1" growingMaxLines="6" growing="true"/>
+			                            <HBox width="100%" id="__hbox1">
+			                                <items>
+			                                    <HBox width="50%" id="__hbox2" alignContent="Center" alignItems="Center" renderType="Bare">
+			                                        <items>
+			                                            <Label text="MDR Type:" id="__label6" textDirection="LTR" design="Bold" width="15%"/>
+			                                            <TextArea id="urlBox" rows="1" editable="false" valueLiveUpdate="true" width="30%"/>
+			                                        </items>
+			                                    </HBox>
+			                                    <HBox width="50%" id="__hbox3" alignItems="Center" alignContent="Center" justifyContent="End">
+			                                        <items>
+			                                        	<Button text="Clear" width="100px" id="clearButton" press="clearAnalyze" class="sapUiTinyMarginEnd"/>
+			                                            <Button xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Submit" width="100px" id="submitButton" press="onSubmit"/>
+			                                        </items>
+			                                    </HBox>
+			                                </items>
+			                            </HBox>
+								        <List xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="filtersList" growing="true" growingThreshold="10" headerText="Filters:" noDataText="Insert a link and press Submit">
+										</List>
+										<List xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="paramsList" growing="true" growingThreshold="10" headerText="Parameters:" noDataText="Insert a link and press Submit">
+										</List>
+			                        </items>
+			                    </VBox>
+			                </content>
+			            </Page>
+			            <Page title="Build" id="buildPage" showFooter="false" showSubHeader="false" showHeader="false">
+			                <content>
+			                	<VBox id="selectionType">
+				                	<Label text="Select Dashboard type:" id="__dashTypeLabel" design="Bold"/>
+				                	<ComboBox id="dashType" items="{dashboards>/}" selectionChange="dashSelection" placeholder="Type">
+				                		<core:Item key="{dashboards>key}" text="{dashboards>name}"/>
+				                	</ComboBox>
+			                	</VBox>
+			                	<HBox width="100%" direction="Row" id="__vbox2">
+				                	<items>
+				                	    <Button text="Add Filter" width="130px" id="buttonAddFilter" press="handleSelectDialogPress"/>
+				                	    <Button text="Add Parameter" width="130px" id="buttonAddParam" press="handleParamDialogPress" class="sapUiTinyMarginBegin"/>
+				                	    <Button text="Generate URL" width="130px" id="buttonGenerateUrl" press="generateUrl" class="sapUiTinyMarginBegin"/>
+				                	</items>
+			                	</HBox>
+			                	<List id="selectedList" growing="true" growingThreshold="10" headerText="Current Selection:" mode="Delete" delete="onDelete">
+			                	</List>
+			                </content>
+			            </Page>
+			        </pages>
+			    </NavContainer>
+			</content>
+			<headerContent>
+			    <core:Icon src="sap-icon://home" size="2em" id="__icon0" press="onPress">
+			        <core:customData>
+			            <core:CustomData id="__data19" key="target" value="overviewPage"/>
+			        </core:customData>
+			    </core:Icon>
+			</headerContent>
+			<footer>
+			    <Bar id="__bar2" design="Footer">
+			    <contentLeft>
+			        <Button text="Links" width="100px" id="__button2" icon="sap-icon://chain-link" class="sapUiTinyMarginBegin" press="openLinksDialog"/>
+			    </contentLeft>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
