@@ -2,3 +2,23 @@
 .sapMShellBrandingBar {
     height: 0;
 }
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}
+.sapMShellContent, .sapMApp, .sapMMessagePage {
+	background: transparent;
+}
+.textCenter {
+	color: #333333;
+	font-size: 1rem;
+	/*text-shadow: 1px 1px 3px black;*/
+	text-align: center;
+}
+.labelColor {
+	color: #333333;
+	font-size: 1.125rem;
+}
+.sapMMessagePage .sapMMessagePageInner .sapUiIcon::before {
+	color: white;
+	text-shadow: 0.5px 0.5px 3px #333333;
+}

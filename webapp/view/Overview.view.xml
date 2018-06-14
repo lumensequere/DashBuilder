@@ -1,0 +1,19 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.Overview">
+	<Page title="Page" id="overviewPage" showFooter="true" showHeader="false" width="auto" enableScrolling="false" floatingFooter="false" showSubHeader="false" backgroundDesign="Transparent">
+		<content>
+			<VBox width="100%" height="100%" id="__vbox1" alignContent="Center" alignItems="Center" justifyContent="Center" direction="Column">
+				<items>
+					<FormattedText htmlText="&lt;strong&gt;Welcome to the MDR Dashboard Builder &amp; Analyzer&lt;/strong&gt;" width="100%" class="sapUiMediumMarginBottom"/>
+					<FormattedText htmlText="Use the buttons at the top of the page to navigate between URL analyzing and building.&lt;br&gt;For more information about dashboard creation, best practices and examples, please have a look in the Links button at the footer of this page." width="100%" class="textCenter"/>
+				</items>
+			</VBox>
+		</content>
+		<footer>
+			<Bar id="overviewBar" design="Auto">
+				<contentLeft>
+					<Button text="Links" width="100px" id="__button2" icon="sap-icon://chain-link" press="openLinksDialog"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

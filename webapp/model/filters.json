@@ -6,10 +6,131 @@
 		"type": ""
 	},
 	{
+		"key": "mdr1",
+		"name": "Service Team",
+		"filter": "activity_service_team",
+		"options": [
+			{"name": "Business Down Global","value": "0004864490","group": "Global"},{"name": "EMSO Global","value": "0006463763","group": "Global"},{"name": "DS HANA Global","value": "0013732949","group": "Global"},{"name": "DS Cloud Global","value": "0019568810","group": "Global"},
+			{"name": "Business Down EMEA","value": "0003584574","group": "EMEA"},{"name": "EMSO EMEA","value": "0016539820","group": "EMEA"},{"name": "DS HANA EMEA","value": "0014217791","group": "EMEA"},{"name": "DS S/4H EMEA","value": "0016673868","group": "EMEA"},{"name": "DS Hybrid EMEA","value": "0025674544","group": "EMEA"},{"name": "DS Cloud EMEA","value": "0017877275","group": "EMEA"},{"name": "DS Innovation Adoption EMEA","value": "0014235826","group": "EMEA"},{"name": "DS Hybrid Operation EMEA","value": "0014235827","group": "EMEA"},{"name": "Solutioning Center EMEA","value": "0024264177","group": "EMEA"},{"name": "Solutioning Center MEE","value": "0024264175","group": "EMEA"},
+			{"name": "Business Down USA","value": "0003612382","group": "USA"},{"name": "EMSO USA","value": "0021710213","group": "USA"},{"name": "DS HANA USA","value": "0014235364","group": "USA"},{"name": "DS S/4H USA","value": "0025970644","group": "USA"},{"name": "DS Hybrid USA","value": "0025978264","group": "USA"},{"name": "DS Cloud USA","value": "0016755384","group": "USA"},{"name": "DS Innovation Adoption USA","value": "0019198289","group": "USA"},{"name": "DS Hybrid Operation USA","value": "0019198290","group": "USA"},
+			{"name": "Business Down LAC","value": "0009804549","group": "LAC"},{"name": "EMSO LAC","value": "0015966792","group": "LAC"},{"name": "DS HANA LAC","value": "0014235365","group": "LAC"},{"name": "DS S/4H LAC","value": "0025970643","group": "LAC"},{"name": "DS Hybrid LAC","value": "0025978266","group": "LAC"},{"name": "DS Cloud LAC","value": "0017403528","group": "LAC"},{"name": "DS Innovation Adoption LAC","value": "0015963535","group": "LAC"},{"name": "DS Hybrid Operation LAC","value": "0015963537","group": "LAC"},
+			{"name": "Business Down GC","value": "0003612380","group": "Greater China"},{"name": "EMSO GC","value": "0014217680","group": "Greater China"},{"name": "DS HANA GC","value": "0014235363","group": "Greater China"},{"name": "DS S/4H GC","value": "0025970641","group": "Greater China"},{"name": "DS Hybrid GC","value": "0025978270","group": "Greater China"},{"name": "DS Cloud GC","value": "0019093065","group": "Greater China"},{"name": "DS Innovation Adoption GC","value": "0014629050","group": "Greater China"},{"name": "DS Hybrid Operation GC","value": "0014629051","group": "Greater China"},
+			{"name": "Business Down India","value": "0003612380","group": "India"},{"name": "EMSO India","value": "0014722020","group": "India"},{"name": "DS HANA India","value": "0014235363","group": "India"},{"name": "DS S/4H India","value": "0025970641","group": "India"},{"name": "DS Hybrid India","value": "0025978270","group": "India"},{"name": "DS Cloud India","value": "0019093065","group": "India"},{"name": "DS Innovation Adoption India","value": "0014629050","group": "India"},{"name": "DS Hybrid Operation India","value": "0014629051","group": "India"},
+			{"name": "Business Down ANZ","value": "0003612380","group": "ANZ"},{"name": "EMSO ANZ","value": "0016122383","group": "ANZ"},{"name": "DS HANA ANZ","value": "0014235363","group": "ANZ"},{"name": "DS S/4H ANZ","value": "0025970641","group": "ANZ"},{"name": "DS Hybrid ANZ","value": "0025978270","group": "ANZ"},{"name": "DS Cloud ANZ","value": "0019093065","group": "ANZ"},{"name": "DS Innovation Adoption ANZ","value": "0014629050","group": "ANZ"},{"name": "DS Hybrid Operation ANZ","value": "0014629051","group": "ANZ"},
+			{"name": "Business Down JP","value": "0003612380","group": "JP"},{"name": "EMSO JP","value": "0016122385","group": "JP"},{"name": "DS HANA JP","value": "0014235363","group": "JP"},{"name": "DS S/4H JP","value": "0025970641","group": "JP"},{"name": "DS Hybrid JP","value": "0025978270","group": "JP"},{"name": "DS Cloud JP","value": "0019013065","group": "JP"},{"name": "DS Innovation Adoption JP","value": "0014629050","group": "JP"},{"name": "DS Hybrid Operation JP","value": "0014629051","group": "JP"},
+			{"name": "Business Down SEA","value": "0003612380","group": "SEA"},{"name": "EMSO SEA","value": "0016122387","group": "SEA"},{"name": "DS HANA SEA","value": "0014235363","group": "SEA"},{"name": "DS S/4H SEA","value": "0025970641","group": "SEA"},{"name": "DS Hybrid SEA","value": "0025978270","group": "SEA"},{"name": "DS Cloud SEA","value": "0019093065","group": "SEA"},{"name": "DS Innovation Adoption SEA","value": "0014629050","group": "SEA"},{"name": "DS Hybrid Operation SEA","value": "0014629051","group": "SEA"},
+			{"name": "Business Down KOR","value": "0003612380","group": "KOR"},{"name": "EMSO KOR","value": "0022163161","group": "KOR"},{"name": "DS HANA KOR","value": "0014235363","group": "KOR"},{"name": "DS S/4H KOR","value": "0025970641","group": "KOR"},{"name": "DS Hybrid KOR","value": "0025978270","group": "KOR"},{"name": "DS Cloud KOR","value": "0019093065","group": "KOR"},{"name": "DS Innovation Adoption KOR","value": "0014629050","group": "KOR"},{"name": "DS Hybrid Operation KOR","value": "0014629051","group": "KOR"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Process Type",
+		"filter": "activity_process_type",
+		"options": [
+			{"name": "Request for Backoffice Assistance","value": "ZS46"}
+		],
+		"type": "Single Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Business Partner",
+		"filter": "activity_activity_partner",
+		"type": "input"
+	},
+	{
+		"key": "mdr1",
+		"name": "Customer Number",
+		"filter": "activity_customer",
+		"type": "input"
+	},
+	{
+		"key": "mdr1",
+		"name": "Priority",
+		"filter": "activity_priority",
+		"options": [
+			{"name": "Very High","value": "1"},{"name": "High","value": "3"},{"name": "Normal","value": "5"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Person Responsible",
+		"filter": "activity_person_resp",
+		"type": "input"
+	},
+	{
+		"key": "mdr1",
+		"name": "Result Description",
+		"filter": "activity_result_desc",
+		"options": [
+			{"name": "Analysis needed","value": "Z2ZS460001"},{"name": "Action plan provided","value": "Z2ZS460002"},{"name": "Workaround provided","value": "Z2ZS460003"},{"name": "Solution provided","value": "Z2ZS460004"},{"name": "Issue solved follow up needed","value": "Z2ZS460005"},{"name": "MOD required","value": "Z2ZS460020"},{"name": "In process OMF","value": "Z2ZS460030"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Status",
+		"filter": "activity_status",
+		"options": [
+			{"name": "New","value": "E0010"},{"name": "In Process Backoffice","value": "E0011"},{"name": "Responsible's Action","value": "E0012"},{"name": "Confirmed","value": "E0013"},{"name": "Completed","value": "E0014"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Status Description",
+		"filter": "activity_status_desc",
+		"type": "input"
+	},
+	{
+		"key": "mdr1",
+		"name": "Reason Code",
+		"filter": "activity_reason_code",
+		"options": [
+			{"name": "Whiteboard","value": "0010"},{"name": "Handover","value": "0020"},{"name": "Whiteboard Handover","value": "0030"},{"name": "Quality Assurance","value": "0040"},{"name": "New","value": "0050"},{"name": "No Handover","value": "0060"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Category",
+		"filter": "activity_cat",
+		"options": [
+			{"name": "AGS:ActEmbMsg (ZB9)","value": "ZB9"},{"name": "AGS:BOSAP BO (ZZM)","value": "ZZM"},{"name": "AGS:CriticalPrio1Ms (ZZI)","value": "ZZI"},{"name": "AGS:CriticalPrio2Ms (ZZJ)","value": "ZZJ"},{"name": "AGS:EnterprSuppMsg (ZZE)","value": "ZZE"},{"name": "AGS:GoLive Endanger (Z90)","value": "Z90"},{"name": "AGS:MaxAttentionMsg (Z93)","value": "Z93"},{"name": "AGS:MCS BO Escal (ZB2)","value": "ZB2"},
+			{"name": "AGS:MCSEscalMsg (ZZG)","value": "ZZG"},{"name": "AGS:Production Down (Z91)","value": "Z91"},{"name": "AGS:SafeguardingMsg (ZZF)","value": "ZZF"},{"name": "AGS:StandardCustMsg (ZZH)","value": "ZZH"},{"name": "MCC Customer Visit (ZVM)","value": "ZVM"},{"name": "AGS:MCC (ZB4)","value": "ZB4"},{"name": "AGS:Enterprise Supp (ZSF)","value": "ZSF"},{"name": "AGS:Embedded Support (ZZN)","value": "ZZN"},
+			{"name": "AGS:Frontoffice Sup (Z88)","value": "Z88"},{"name": "DBS:PositioningSup (ZZA)","value": "ZZA"},{"name": "Q-Gate Support (ZB2)","value": "ZB2"},{"name": "DBS:PGA (ZB5)","value": "ZB5"},{"name": "AGS:Cust/Proj.Eval (Z83)","value": "Z83"},{"name": "AGS:RAPP (ZY3)","value": "ZY3"},{"name": "AGS:RemoteSystAnaly (Z84)","value": "Z84"},{"name": "AGS:ServPln/RskMigRv (Z86)","value": "Z86"},{"name": "AGS:Solution Manag (ZA7)","value": "ZA7"},
+			{"name": "AGS: Active Embedded (ZAE)","value": "ZAE"},{"name": "AGS: MaxAttention (Z72)","value": "Z72"},{"name": "AGS: Enterprise Supp (ZSF)","value": "ZSF"},{"name": "AGS:PE Prospect (ZSS)","value": "ZSS"},{"name": "AGS:PSLE (ZID)","value": "ZID"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr1",
+		"name": "Delivery Unit",
+		"filter": "activity_delivery_unit",
+		"options": [
+			{"name": "Ariba","value": "167980"},{"name": "Concur","value": "4829451"},{"name": "Crossgate","value": "3714250"},{"name": "Fieldglass","value": "8470002"},{"name": "hybris","value": "9548097"},{"name": "C4C","value": "10351239"},{"name": "ByD","value": "13014776"},{"name": "C4TE","value": "15453147"},{"name": "HEC","value": "1212132"},{"name": "SAP IT","value": "1804051"},
+			{"name": "Cloud Platform Integration","value": "26494752"},{"name": "SCP","value": "24688048"},{"name": "Integrated Business Planning","value": "23880567"},{"name": "Event Ticketing","value": "26009812"},{"name": "SPORTS1","value": "18994393"},{"name": "Cloud Identity Management","value": "26494750"},{"name": "SuccessFactors","value": "167698"},{"name": "S/4HANA Cloud Edition","value": "14215381"}
+		],
+		"type": "Multi Select"
+	},
+	{
 		"key": "mdr2",
 		"name": "Service Team",
 		"filter": "activity_service_team",
-		"type": "select"
+		"options": [
+			{"name": "Business Down Global","value": "0004864490","group": "Global"},{"name": "EMSO Global","value": "0006463763","group": "Global"},{"name": "DS HANA Global","value": "0013732949","group": "Global"},{"name": "DS Cloud Global","value": "0019568810","group": "Global"},
+			{"name": "Business Down EMEA","value": "0003584574","group": "EMEA"},{"name": "EMSO EMEA","value": "0016539820","group": "EMEA"},{"name": "DS HANA EMEA","value": "0014217791","group": "EMEA"},{"name": "DS S/4H EMEA","value": "0016673868","group": "EMEA"},{"name": "DS Hybrid EMEA","value": "0025674544","group": "EMEA"},{"name": "DS Cloud EMEA","value": "0017877275","group": "EMEA"},{"name": "DS Innovation Adoption EMEA","value": "0014235826","group": "EMEA"},{"name": "DS Hybrid Operation EMEA","value": "0014235827","group": "EMEA"},{"name": "Solutioning Center EMEA","value": "0024264177","group": "EMEA"},{"name": "Solutioning Center MEE","value": "0024264175","group": "EMEA"},
+			{"name": "Business Down USA","value": "0003612382","group": "USA"},{"name": "EMSO USA","value": "0021710213","group": "USA"},{"name": "DS HANA USA","value": "0014235364","group": "USA"},{"name": "DS S/4H USA","value": "0025970644","group": "USA"},{"name": "DS Hybrid USA","value": "0025978264","group": "USA"},{"name": "DS Cloud USA","value": "0016755384","group": "USA"},{"name": "DS Innovation Adoption USA","value": "0019198289","group": "USA"},{"name": "DS Hybrid Operation USA","value": "0019198290","group": "USA"},
+			{"name": "Business Down LAC","value": "0009804549","group": "LAC"},{"name": "EMSO LAC","value": "0015966792","group": "LAC"},{"name": "DS HANA LAC","value": "0014235365","group": "LAC"},{"name": "DS S/4H LAC","value": "0025970643","group": "LAC"},{"name": "DS Hybrid LAC","value": "0025978266","group": "LAC"},{"name": "DS Cloud LAC","value": "0017403528","group": "LAC"},{"name": "DS Innovation Adoption LAC","value": "0015963535","group": "LAC"},{"name": "DS Hybrid Operation LAC","value": "0015963537","group": "LAC"},
+			{"name": "Business Down GC","value": "0003612380","group": "Greater China"},{"name": "EMSO GC","value": "0014217680","group": "Greater China"},{"name": "DS HANA GC","value": "0014235363","group": "Greater China"},{"name": "DS S/4H GC","value": "0025970641","group": "Greater China"},{"name": "DS Hybrid GC","value": "0025978270","group": "Greater China"},{"name": "DS Cloud GC","value": "0019093065","group": "Greater China"},{"name": "DS Innovation Adoption GC","value": "0014629050","group": "Greater China"},{"name": "DS Hybrid Operation GC","value": "0014629051","group": "Greater China"},
+			{"name": "Business Down India","value": "0003612380","group": "India"},{"name": "EMSO India","value": "0014722020","group": "India"},{"name": "DS HANA India","value": "0014235363","group": "India"},{"name": "DS S/4H India","value": "0025970641","group": "India"},{"name": "DS Hybrid India","value": "0025978270","group": "India"},{"name": "DS Cloud India","value": "0019093065","group": "India"},{"name": "DS Innovation Adoption India","value": "0014629050","group": "India"},{"name": "DS Hybrid Operation India","value": "0014629051","group": "India"},
+			{"name": "Business Down ANZ","value": "0003612380","group": "ANZ"},{"name": "EMSO ANZ","value": "0016122383","group": "ANZ"},{"name": "DS HANA ANZ","value": "0014235363","group": "ANZ"},{"name": "DS S/4H ANZ","value": "0025970641","group": "ANZ"},{"name": "DS Hybrid ANZ","value": "0025978270","group": "ANZ"},{"name": "DS Cloud ANZ","value": "0019093065","group": "ANZ"},{"name": "DS Innovation Adoption ANZ","value": "0014629050","group": "ANZ"},{"name": "DS Hybrid Operation ANZ","value": "0014629051","group": "ANZ"},
+			{"name": "Business Down JP","value": "0003612380","group": "JP"},{"name": "EMSO JP","value": "0016122385","group": "JP"},{"name": "DS HANA JP","value": "0014235363","group": "JP"},{"name": "DS S/4H JP","value": "0025970641","group": "JP"},{"name": "DS Hybrid JP","value": "0025978270","group": "JP"},{"name": "DS Cloud JP","value": "0019013065","group": "JP"},{"name": "DS Innovation Adoption JP","value": "0014629050","group": "JP"},{"name": "DS Hybrid Operation JP","value": "0014629051","group": "JP"},
+			{"name": "Business Down SEA","value": "0003612380","group": "SEA"},{"name": "EMSO SEA","value": "0016122387","group": "SEA"},{"name": "DS HANA SEA","value": "0014235363","group": "SEA"},{"name": "DS S/4H SEA","value": "0025970641","group": "SEA"},{"name": "DS Hybrid SEA","value": "0025978270","group": "SEA"},{"name": "DS Cloud SEA","value": "0019093065","group": "SEA"},{"name": "DS Innovation Adoption SEA","value": "0014629050","group": "SEA"},{"name": "DS Hybrid Operation SEA","value": "0014629051","group": "SEA"},
+			{"name": "Business Down KOR","value": "0003612380","group": "KOR"},{"name": "EMSO KOR","value": "0022163161","group": "KOR"},{"name": "DS HANA KOR","value": "0014235363","group": "KOR"},{"name": "DS S/4H KOR","value": "0025970641","group": "KOR"},{"name": "DS Hybrid KOR","value": "0025978270","group": "KOR"},{"name": "DS Cloud KOR","value": "0019093065","group": "KOR"},{"name": "DS Innovation Adoption KOR","value": "0014629050","group": "KOR"},{"name": "DS Hybrid Operation KOR","value": "0014629051","group": "KOR"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
@@ -39,31 +160,58 @@
 		"key": "mdr2",
 		"name": "Service Organization",
 		"filter": "activity_service_org",
-		"type": "select"
+		"options": [
+			{"name": "SolS-LA","value": "O 50008174"},{"name": "SolS-NA","value": "O 50008167"},{"name": "SolS-APJ","value": "O 50008134"},{"name": "SolS-EMEA","value": "O 50008010"},{"name": "AGS - Active Global Support","value": "O 50008008"},{"name": "SAP SE","value": "O 50000608"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Process Type",
 		"filter": "activity_process_type",
-		"type": "select"
+		"options": [
+			{"name": "PERC","value": "ZS88"},{"name": "CIC Request","value": "ZS53"},{"name": "Escal Backoffice Request","value": "ZS51"},{"name": "Solman Task","value": "ZS49"},{"name": "Service and Support Report","value": "ZS47"},{"name": "Request for Backoffice Assistance","value": "ZS46"},{"name": "Request for Assistance","value": "ZS43"},{"name": "Request for onsite service delivery","value": "ZS42"},{"name": "Customer Screening","value": "ZS41"},{"name": "Task","value": "ZS35"},{"name": "Escalation Request","value": "ZS31"},{"name": "General Activity","value": "ZS03"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Priority",
 		"filter": "activity_priority",
-		"type": "select"
+		"options": [
+			{"name": "Very High","value": "1"},{"name": "High","value": "3"},{"name": "Normal","value": "5"},{"name": "Low","value": "9"},{"name": "No Priority","value": "0"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
-		"name": "Result",
+		"name": "Result Description",
 		"filter": "activity_result_desc",
-		"type": "select"
+		"options": [
+			{"name": "Analysis needed","value": "Z2ZS460001"},{"name": "Action plan provided","value": "Z2ZS460002"},{"name": "Workaround provided","value": "Z2ZS460003"},{"name": "Solution provided","value": "Z2ZS460004"},{"name": "Issue solved follow up needed","value": "Z2ZS460005"},{"name": "MOD required","value": "Z2ZS460020"},{"name": "In process OMF","value": "Z2ZS460030"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Status",
 		"filter": "activity_status",
-		"type": "select"
+		"options": [
+			{"name": "New","value": "E0010","group": "Req. Backoffice Assistance"},{"name": "In Process Backoffice","value": "E0011","group": "Req. Backoffice Assistance"},{"name": "Responsible's Action","value": "E0012","group": "Req. Backoffice Assistance"},{"name": "Confirmed","value": "E0013","group": "Req. Backoffice Assistance"},{"name": "Completed","value": "E0014","group": "Req. Backoffice Assistance"},{"name": "In Process SAC","value": "E0018","group": "Req. Backoffice Assistance"},{"name": "In MCC Dep Rooms","value": "E0019","group": "Req. Backoffice Assistance"},{"name": "In Process CIM","value": "E0020","group": "Req. Backoffice Assistance"},{"name": "In Process IEM","value": "E0021","group": "Req. Backoffice Assistance"},{"name": "In Process CIC","value": "E0022","group": "Req. Backoffice Assistance"},{"name": "In Process COM","value": "E0023","group": "Req. Backoffice Assistance"},{"name": "In Process PS","value": "E0024","group": "Req. Backoffice Assistance"},{"name": "In Process IMS","value": "E0025","group": "Req. Backoffice Assistance"},
+			{"name": "New","value": "E0001","group": "PERC"},{"name": "In Process","value": "E0003","group": "PERC"},{"name": "Planned","value": "E0002","group": "PERC"},{"name": "In Process PERC","value": "E0003","group": "PERC"},{"name": "In Process OP Team","value": "E0004","group": "PERC"},{"name": "Postponed","value": "E0005","group": "PERC"},{"name": "Cancelled","value": "E0006","group": "PERC"},{"name": "Completed","value": "E0007","group": "PERC"},{"name": "Prepared","value": "E0008","group": "PERC"},{"name": "Review Performed","value": "E0009","group": "PERC"},{"name": "Minutes Generated","value": "E0010","group": "PERC"},{"name": "Surveyed","value": "E0011","group": "PERC"},
+			{"name": "New","value": "E0001","group": "CIC Request"},{"name": "In Process","value": "E0002","group": "CIC Request"},{"name": "Completed","value": "E0003","group": "CIC Request"},
+			{"name": "New","value": "E0010","group": "Escal Backoffice Request"},{"name": "In Process","value": "E0011","group": "Escal Backoffice Request"},{"name": "Confirmed","value": "E0012","group": "Escal Backoffice Request"},{"name": "Completed","value": "E0013","group": "Escal Backoffice Request"},{"name": "Cancelled","value": "E0014","group": "Escal Backoffice Request"},
+			{"name": "Open","value": "E0001","group": "Solman Task"},{"name": "In Process","value": "E0002","group": "Solman Task"},{"name": "Draft","value": "E0003","group": "Solman Task"},{"name": "Rejected","value": "E0004","group": "Solman Task"},{"name": "Completed","value": "E0005","group": "Solman Task"},
+			{"name": "New","value": "E0001","group": "Service and Support Report"},{"name": "In Process","value": "E0002","group": "Service and Support Report"},{"name": "Completed","value": "E0003","group": "Service and Support Report"},
+			{"name": "New","value": "E0010","group": "Request for Assistance"},{"name": "In Process","value": "E0011","group": "Request for Assistance"},{"name": "Confirmed","value": "E0012","group": "Request for Assistance"},{"name": "Completed","value": "E0013","group": "Request for Assistance"},{"name": "Cancelled","value": "E0014","group": "Request for Assistance"},
+			{"name": "New","value": "E0010","group": "Req. onsite service delivery"},{"name": "In Process Backoffice","value": "E0011","group": "Req. onsite service delivery"},{"name": "Reponsible's Action","value": "E0012","group": "Req. onsite service delivery"},{"name": "Confirmed","value": "E0013","group": "Req. onsite service delivery"},{"name": "Completed","value": "E0014","group": "Req. onsite service delivery"},{"name": "In Process SAC","value": "E0018","group": "Req. onsite service delivery"},{"name": "In Process CIM","value": "E0020","group": "Req. onsite service delivery"},{"name": "In Process IEM","value": "E0021","group": "Req. onsite service delivery"},{"name": "In Process CIC","value": "E0022","group": "Req. onsite service delivery"},
+			{"name": "New","value": "E0001","group": "Customer Screening"},{"name": "Switch","value": "E0005","group": "Customer Screening"},{"name": "In Process","value": "E0006","group": "Customer Screening"},{"name": "Opportunity Created","value": "E0007","group": "Customer Screening"},{"name": "No Opportunity created","value": "E0008","group": "Customer Screening"},{"name": "Resumn","value": "E0010","group": "Customer Screening"},
+			{"name": "New","value": "E0010","group": "Task"},{"name": "In Process","value": "E0011","group": "Task"},{"name": "Completed","value": "E0012","group": "Task"},{"name": "In Process SAC","value": "E0013","group": "Task"},
+			{"name": "New","value": "E0010","group": "Escalation Request"},{"name": "In Process","value": "E0011","group": "Escalation Request"},{"name": "Accepted","value": "E0012","group": "Escalation Request"},{"name": "Rejected","value": "E0013","group": "Escalation Request"},
+			{"name": "Open","value": "E0001","group": "General Activity"},{"name": "In process","value": "E0002","group": "General Activity"},{"name": "Completed","value": "E0003","group": "General Activity"},{"name": "Cancelled","value": "E0007","group": "General Activity"},{"name": "Completed automatically","value": "E0010","group": "General Activity"},
+			{"name": "New","value": "New","group": "ZS02"},{"name": "Open / New","value": "Open / New","group": "ZS02"},{"name": "In Process","value": "In Process","group": "ZS02"},{"name": "In Escalation","value": "In Escalation","group": "ZS02"},{"name": "In Management Review","value": "In Management Review","group": "ZS02"},{"name": "Closed","value": "Closed","group": "ZS02"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
@@ -73,45 +221,139 @@
 	},
 	{
 		"key": "mdr2",
-		"name": "Reason Code",
-		"filter": "activity_reason_code",
-		"type": "select"
+		"name": "Reason Code for ZS46",
+		"filter": "activity_reason",
+		"options": [
+			{"name": "Whiteboard","value": "0010"},{"name": "Handover","value": "0020"},{"name": "Whiteboard Handover","value": "0030"},{"name": "Quality Assurance","value": "0040"},{"name": "New","value": "0050"},{"name": "No Handover","value": "0060"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Reason",
-		"filter": "activity_reason",
-		"type": "input"
+		"filter": "activity_reason_code",
+		"options": [
+			{"name": "Engagement Review","value": "ZRZS88    0001","group": "ZS88"},{"name": "Quality Check","value": "ZRZS88    0002","group": "ZS88"},{"name": "Triage","value": "ZRZS88    0003","group": "ZS88"},
+			{"name": "Whiteboard","value": "A1ZS0000010010","group": "ZS46"},{"name": "Handover to APJ","value": "A1ZS0000010020","group": "ZS46"},{"name": "Quality Assurance","value": "A1ZS0000010040","group": "ZS46"},{"name": "New","value": "A1ZS0000010050","group": "ZS46"},{"name": "Handover to 24/7","value": "A1ZS0000010060","group": "ZS46"},{"name": "Handover to USA","value": "A1ZS0000010070","group": "ZS46"},{"name": "Handover to EMEA","value": "A1ZS0000010080","group": "ZS46"},{"name": "Handover to LA","value": "A1ZS0000010090","group": "ZS46"},{"name": "Watch List TL","value": "A1ZS0000010100","group": "ZS46"},
+			{"name": "Maintenance","value": "ZRZS43    0001","group": "ZS43"},{"name": "SAP Router, RSC installed","value": "ZRZS43    0002","group": "ZS43"},{"name": "SAP Router installed","value": "ZRZS43    0003","group": "ZS43"},{"name": "RSC installed","value": "ZRZS43    0004","group": "ZS43"},{"name": "SAP Router, SOLMAN installed","value": "ZRZS43    0005","group": "ZS43"},{"name": "SOLMAN installed","value": "ZRZS43    0006","group": "ZS43"},
+			{"name": "Regular Activity","value": "A1A0000001A001","group": "ZM01"},{"name": "Advertising campaign","value": "A1A0000001A002","group": "ZM01"},{"name": "Customer inquiry","value": "A1A0000001A003","group": "ZM01"},{"name": "Decision meeting","value": "A1A0000001A004","group": "ZM01"},{"name": "Contract end date","value": "A1A0000001A005","group": "ZM01"},{"name": "Opportunity","value": "A1A0000001A006","group": "ZM01"},{"name": "Callback","value": "A1A0000001A007","group": "ZM01"},{"name": "Customer maintenance","value": "A1A0000001A008","group": "ZM01"},{"name": "Order Placement","value": "A1A0000001A009","group": "ZM01"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Rating",
 		"filter": "activity_rating",
-		"type": "select"
+		"options": [
+			{"name": "Green","value": "G"},{"name": "Yellow","value": "Y"},{"name": "Red","value": "R"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Delivery Unit",
 		"filter": "activity_delivery_unit",
-		"type": "select"
+		"options": [
+			{"name": "Ariba","value": "167980"},{"name": "Concur","value": "4829451"},{"name": "Crossgate","value": "3714250"},{"name": "Fieldglass","value": "8470002"},{"name": "hybris","value": "9548097"},{"name": "C4C","value": "10351239"},{"name": "ByD","value": "13014776"},{"name": "C4TE","value": "15453147"},{"name": "HEC","value": "1212132"},{"name": "SAP IT","value": "1804051"},
+			{"name": "Cloud Platform Integration","value": "26494752"},{"name": "SCP","value": "24688048"},{"name": "Integrated Business Planning","value": "23880567"},{"name": "Event Ticketing","value": "26009812"},{"name": "SPORTS1","value": "18994393"},{"name": "Cloud Identity Management","value": "26494750"},{"name": "SuccessFactors","value": "167698"},{"name": "S/4HANA Cloud Edition","value": "14215381"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr2",
 		"name": "Category",
 		"filter": "activity_cat",
-		"type": "select"
+		"options": [
+			{"name": "AGS:ActEmbMsg (ZB9)","value": "ZB9"},{"name": "AGS:BOSAP BO (ZZM)","value": "ZZM"},{"name": "AGS:CriticalPrio1Ms (ZZI)","value": "ZZI"},{"name": "AGS:CriticalPrio2Ms (ZZJ)","value": "ZZJ"},{"name": "AGS:EnterprSuppMsg (ZZE)","value": "ZZE"},{"name": "AGS:GoLive Endanger (Z90)","value": "Z90"},{"name": "AGS:MaxAttentionMsg (Z93)","value": "Z93"},{"name": "AGS:MCS BO Escal (ZB2)","value": "ZB2"},
+			{"name": "AGS:MCSEscalMsg (ZZG)","value": "ZZG"},{"name": "AGS:Production Down (Z91)","value": "Z91"},{"name": "AGS:SafeguardingMsg (ZZF)","value": "ZZF"},{"name": "AGS:StandardCustMsg (ZZH)","value": "ZZH"},{"name": "MCC Customer Visit (ZVM)","value": "ZVM"},{"name": "AGS:MCC (ZB4)","value": "ZB4"},{"name": "AGS:Enterprise Supp (ZSF)","value": "ZSF"},{"name": "AGS:Embedded Support (ZZN)","value": "ZZN"},
+			{"name": "AGS:Frontoffice Sup (Z88)","value": "Z88"},{"name": "DBS:PositioningSup (ZZA)","value": "ZZA"},{"name": "Q-Gate Support (ZB2)","value": "ZB2"},{"name": "DBS:PGA (ZB5)","value": "ZB5"},{"name": "AGS:Cust/Proj.Eval (Z83)","value": "Z83"},{"name": "AGS:RAPP (ZY3)","value": "ZY3"},{"name": "AGS:RemoteSystAnaly (Z84)","value": "Z84"},{"name": "AGS:ServPln/RskMigRv (Z86)","value": "Z86"},{"name": "AGS:Solution Manag (ZA7)","value": "ZA7"},
+			{"name": "AGS: Active Embedded (ZAE)","value": "ZAE"},{"name": "AGS: MaxAttention (Z72)","value": "Z72"},{"name": "AGS: Enterprise Supp (ZSF)","value": "ZSF"},{"name": "AGS:PE Prospect (ZSS)","value": "ZSS"},{"name": "AGS:PSLE (ZID)","value": "ZID"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Partner Number",
+		"filter": "partner_no",
+		"type": "input"
+	},
+	{
+		"key": "mdr3",
+		"name": "Partner Function",
+		"filter": "partner_fct",
+		"options": [
+			{"name": "Service Team","value": "ZSERST01"},{"name": "Business Partner","value": "00000001"}
+		],
+		"type": "Single Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Service Organization",
+		"filter": "service_org",
+		"options": [
+			{"name": "SolS-LA","value": "O 50008174"},{"name": "SolS-NA","value": "O 50008167"},{"name": "SolS-APJ","value": "O 50008134"},{"name": "SolS-EMEA","value": "O 50008010"},{"name": "AGS - Active Global Support","value": "O 50008008"},{"name": "SAP SE","value": "O 50000608"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Process Type",
+		"filter": "process_type",
+		"options": [
+			{"name": "Top Issue","value": "ZS34"},{"name": "Cross Issue","value": "ZS38"},{"name": "SolMan Top Issue","value": "ZS50"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Status",
+		"filter": "status_code",
+		"options": [
+			{"name": "New","value": "Z1","group": "Top Issues"},{"name": "In Process","value": "Z2","group": "Top Issues"},{"name": "Completed","value": "Z3","group": "Top Issues"},{"name": "Rejected","value": "Z4","group": "Top Issues"},{"name": "Committed/Approved","value": "Z5","group": "Top Issues"},{"name": "Switch","value": "Z6","group": "Top Issues"},{"name": "Responsible Action","value": "Z7","group": "Top Issues"},{"name": "Draft","value": "Z8","group": "Top Issues"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Priority",
+		"filter": "priority_code",
+		"options": [
+			{"name": "Very High","value": "1"},{"name": "High","value": "3"},{"name": "Normal","value": "5"},{"name": "Low","value": "9"},{"name": "No Priority","value": "0"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Rating",
+		"filter": "rating_code",
+		"options": [
+			{"name": "Green","value": "A"},{"name": "Yellow","value": "B"},{"name": "Red","value": "C"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr3",
+		"name": "Case ID",
+		"filter": "top_issue_case_id",
+		"type": "input"
 	},
 	{
 		"key": "mdr7",
-		"name": "Case Type (ZS01 or ZS02)",
+		"name": "Case Type",
 		"filter": "case_type",
-		"type": "input"
+		"options": [
+			{"name": "Escalation Cases","value": "ZS01"},{"name": "Engagement Cases","value": "ZS02"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
 		"name": "Service Organization",
 		"filter": "service_org",
-		"type": "select"
+		"options": [
+			{"name": "SolS-LA","value": "O 50008174"},{"name": "SolS-NA","value": "O 50008167"},{"name": "SolS-APJ","value": "O 50008134"},{"name": "SolS-EMEA","value": "O 50008010"},{"name": "AGS - Active Global Support","value": "O 50008008"},{"name": "SAP SE","value": "O 50000608"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
@@ -123,7 +365,19 @@
 		"key": "mdr7",
 		"name": "Service Team",
 		"filter": "service_team",
-		"type": "select"
+		"options": [
+			{"name": "Business Down Global","value": "0004864490","group": "Global"},{"name": "EMSO Global","value": "0006463763","group": "Global"},{"name": "DS HANA Global","value": "0013732949","group": "Global"},{"name": "DS Cloud Global","value": "0019568810","group": "Global"},
+			{"name": "Business Down EMEA","value": "0003584574","group": "EMEA"},{"name": "EMSO EMEA","value": "0016539820","group": "EMEA"},{"name": "DS HANA EMEA","value": "0014217791","group": "EMEA"},{"name": "DS S/4H EMEA","value": "0016673868","group": "EMEA"},{"name": "DS Hybrid EMEA","value": "0025674544","group": "EMEA"},{"name": "DS Cloud EMEA","value": "0017877275","group": "EMEA"},{"name": "DS Innovation Adoption EMEA","value": "0014235826","group": "EMEA"},{"name": "DS Hybrid Operation EMEA","value": "0014235827","group": "EMEA"},{"name": "Solutioning Center EMEA","value": "0024264177","group": "EMEA"},{"name": "Solutioning Center MEE","value": "0024264175","group": "EMEA"},
+			{"name": "Business Down USA","value": "0003612382","group": "USA"},{"name": "EMSO USA","value": "0021710213","group": "USA"},{"name": "DS HANA USA","value": "0014235364","group": "USA"},{"name": "DS S/4H USA","value": "0025970644","group": "USA"},{"name": "DS Hybrid USA","value": "0025978264","group": "USA"},{"name": "DS Cloud USA","value": "0016755384","group": "USA"},{"name": "DS Innovation Adoption USA","value": "0019198289","group": "USA"},{"name": "DS Hybrid Operation USA","value": "0019198290","group": "USA"},
+			{"name": "Business Down LAC","value": "0009804549","group": "LAC"},{"name": "EMSO LAC","value": "0015966792","group": "LAC"},{"name": "DS HANA LAC","value": "0014235365","group": "LAC"},{"name": "DS S/4H LAC","value": "0025970643","group": "LAC"},{"name": "DS Hybrid LAC","value": "0025978266","group": "LAC"},{"name": "DS Cloud LAC","value": "0017403528","group": "LAC"},{"name": "DS Innovation Adoption LAC","value": "0015963535","group": "LAC"},{"name": "DS Hybrid Operation LAC","value": "0015963537","group": "LAC"},
+			{"name": "Business Down GC","value": "0003612380","group": "Greater China"},{"name": "EMSO GC","value": "0014217680","group": "Greater China"},{"name": "DS HANA GC","value": "0014235363","group": "Greater China"},{"name": "DS S/4H GC","value": "0025970641","group": "Greater China"},{"name": "DS Hybrid GC","value": "0025978270","group": "Greater China"},{"name": "DS Cloud GC","value": "0019093065","group": "Greater China"},{"name": "DS Innovation Adoption GC","value": "0014629050","group": "Greater China"},{"name": "DS Hybrid Operation GC","value": "0014629051","group": "Greater China"},
+			{"name": "Business Down India","value": "0003612380","group": "India"},{"name": "EMSO India","value": "0014722020","group": "India"},{"name": "DS HANA India","value": "0014235363","group": "India"},{"name": "DS S/4H India","value": "0025970641","group": "India"},{"name": "DS Hybrid India","value": "0025978270","group": "India"},{"name": "DS Cloud India","value": "0019093065","group": "India"},{"name": "DS Innovation Adoption India","value": "0014629050","group": "India"},{"name": "DS Hybrid Operation India","value": "0014629051","group": "India"},
+			{"name": "Business Down ANZ","value": "0003612380","group": "ANZ"},{"name": "EMSO ANZ","value": "0016122383","group": "ANZ"},{"name": "DS HANA ANZ","value": "0014235363","group": "ANZ"},{"name": "DS S/4H ANZ","value": "0025970641","group": "ANZ"},{"name": "DS Hybrid ANZ","value": "0025978270","group": "ANZ"},{"name": "DS Cloud ANZ","value": "0019093065","group": "ANZ"},{"name": "DS Innovation Adoption ANZ","value": "0014629050","group": "ANZ"},{"name": "DS Hybrid Operation ANZ","value": "0014629051","group": "ANZ"},
+			{"name": "Business Down JP","value": "0003612380","group": "JP"},{"name": "EMSO JP","value": "0016122385","group": "JP"},{"name": "DS HANA JP","value": "0014235363","group": "JP"},{"name": "DS S/4H JP","value": "0025970641","group": "JP"},{"name": "DS Hybrid JP","value": "0025978270","group": "JP"},{"name": "DS Cloud JP","value": "0019013065","group": "JP"},{"name": "DS Innovation Adoption JP","value": "0014629050","group": "JP"},{"name": "DS Hybrid Operation JP","value": "0014629051","group": "JP"},
+			{"name": "Business Down SEA","value": "0003612380","group": "SEA"},{"name": "EMSO SEA","value": "0016122387","group": "SEA"},{"name": "DS HANA SEA","value": "0014235363","group": "SEA"},{"name": "DS S/4H SEA","value": "0025970641","group": "SEA"},{"name": "DS Hybrid SEA","value": "0025978270","group": "SEA"},{"name": "DS Cloud SEA","value": "0019093065","group": "SEA"},{"name": "DS Innovation Adoption SEA","value": "0014629050","group": "SEA"},{"name": "DS Hybrid Operation SEA","value": "0014629051","group": "SEA"},
+			{"name": "Business Down KOR","value": "0003612380","group": "KOR"},{"name": "EMSO KOR","value": "0022163161","group": "KOR"},{"name": "DS HANA KOR","value": "0014235363","group": "KOR"},{"name": "DS S/4H KOR","value": "0025970641","group": "KOR"},{"name": "DS Hybrid KOR","value": "0025978270","group": "KOR"},{"name": "DS Cloud KOR","value": "0019093065","group": "KOR"},{"name": "DS Innovation Adoption KOR","value": "0014629050","group": "KOR"},{"name": "DS Hybrid Operation KOR","value": "0014629051","group": "KOR"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
@@ -147,340 +401,221 @@
 		"key": "mdr7",
 		"name": "Priority",
 		"filter": "priority",
-		"type": "select"
+		"options": [
+			{"name": "Very High","value": "very high"},{"name": "High","value": "high"},{"name": "Normal","value": "normal"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
 		"name": "Rating",
 		"filter": "rating",
-		"type": "select"
+		"options": [
+			{"name": "Green","value": "Green"},{"name": "Yellow","value": "Yellow"},{"name": "Red","value": "Red"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
 		"name": "Status",
 		"filter": "status",
-		"type": "select"
+		"type": "Multi Select"
 	},
 	{
 		"key": "mdr7",
-		"name": "Case Category",
+		"name": "Category",
 		"filter": "category",
-		"type": "select"
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Customer Type",
+		"filter": "customer_type",
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Reason",
+		"filter": "reason",
+		"options": [
+			{"name": "AGS: Global Case","value": "AGS: Global Case"},{"name": "AGS: Project","value": "AGS: Project"},{"name": "COE: Customer on Watch","value": "COE: Customer on Watch"},{"name": "MCC/ESRV Initiative","value": "MCC/ESRV Initiative"}
+		],
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Case ID",
+		"filter": "case_id",
+		"type": "input"
+	},
+	{
+		"key": "mdr7",
+		"name": "Initiative Code",
+		"filter": "initiative_code",
+		"type": "Multi Select"
+	},
+	{
+		"key": "mdr7",
+		"name": "Risk Level",
+		"filter": "risk_level",
+		"options": [
+			{"name": "Level 0 - Decision Pending","value": "0"},{"name": "Level 1 - Sensitive Account","value": "A"},{"name": "Level 2 - SUGEN","value": "B"}
+		],
+		"type": "Multi Select"
 	},
 	{
 		"key": "all",
-		"name": "Source",
-		"filter": "&source",
+		"name": "Data Source",
+		"filter": "source",
 		"options": [
-			{
-				"name": "ICP",
-				"value": "icp"
-			},
-			{
-				"name": "ICT",
-				"value": "ict"
-			}
+			{"name": "ICP","value": "icp"},{"name": "ICT","value": "ict"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Refresh Interval",
-		"filter": "&refreshInterval",
+		"filter": "refreshInterval",
 		"type": "input"
 	},
 	{
 		"key": "all",
 		"name": "Flip Interval",
-		"filter": "&flipInterval",
+		"filter": "flipInterval",
 		"type": "input"
 	},
 	{
 		"key": "all",
-		"name": "Title",
-		"filter": "&title",
+		"name": "Dashboard Title",
+		"filter": "title",
 		"type": "input"
 	},
 	{
 		"key": "all",
 		"name": "Mask Data",
-		"filter": "&MaskData",
+		"filter": "MaskData",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
-		"name": "Zoom",
-		"filter": "&zoom",
+		"name": "Dashboard Zoom",
+		"filter": "zoom",
 		"type": "input"
 	},
 	{
 		"key": "all",
-		"name": "Layout",
-		"filter": "&layout",
+		"name": "Dashboard Layout",
+		"filter": "layout",
 		"options": [
-			{
-				"name": "Blue",
-				"value": "blue"
-			},
-			{
-				"name": "Dark",
-				"value": "dark"
-			}
+			{"name": "Blue","value": "blue"},{"name": "Dark","value": "dark"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Hide Priority",
-		"filter": "&hidePrio",
+		"filter": "hidePrio",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
-		"name": "Sorter",
-		"filter": "&sorter",
+		"name": "Dashboard Sorter",
+		"filter": "sorter",
 		"options": [
-			{
-				"Name": "Priority Ascending",
-				"value": "prioKey/asc"
-			},
-			{
-				"name": "Priority Descending",
-				"value": "prioKey/desc"
-			},
-			{
-				"name": "Ref. Customer Ascending",
-				"value": "refCustSort/asc"
-			},
-			{
-				"name": "Ref. Customer Descending",
-				"value": "refCustSort/desc"
-			},
-			{
-				"name": "Customer Ascending",
-				"value": "customer/asc"
-			},
-			{
-				"name": "Customer Descending",
-				"value": "customer/desc"
-			},
-			{
-				"name": "Issue Ascending",
-				"value": "issue/asc"
-			},
-			{
-				"name": "Issue Descending",
-				"value": "issue/desc"
-			},
-			{
-				"name": "Due Time Ascending",
-				"value": "dueTimeKey/asc"
-			},
-			{
-				"name": "Due Time Descending",
-				"value": "dueTimeKey/desc"
-			},
-			{
-				"name": "Rating Ascending",
-				"value": "ratingKey/asc"
-			},
-			{
-				"name": "Rating Descending",
-				"value": "ratingKey/desc"
-			},
-			{
-				"name": "Status Ascending",
-				"value": "statusKey/asc"
-			},
-			{
-				"name": "Status Descending",
-				"value": "statusKey/desc"
-			},
-			{
-				"name": "Employee Ascending",
-				"value": "employee/asc"
-			},
-			{
-				"name": "Employee Descending",
-				"value": "employee/desc"
-			},
-			{
-				"name": "Country Ascending",
-				"value": "country/asc"
-			},
-			{
-				"name": "Country Descending",
-				"value": "country/desc"
-			},
-			{
-				"name": "Delivery Unit Ascending",
-				"value": "delUnitText/asc"
-			},
-			{
-				"name": "Delivery Unit Descending",
-				"value": "delUnitText/desc"
-			}
+			{"Name": "Priority Ascending","value": "prioKey/asc"},{"name": "Priority Descending","value": "prioKey/desc"},{"name": "Ref. Customer Ascending","value": "refCustSort/asc"},{"name": "Ref. Customer Descending","value": "refCustSort/desc"},{"name": "Customer Ascending","value": "customer/asc"},{"name": "Customer Descending","value": "customer/desc"},
+			{"name": "Issue Ascending","value": "issue/asc"},{"name": "Issue Descending","value": "issue/desc"},{"name": "Due Time Ascending","value": "dueTimeKey/asc"},{"name": "Due Time Descending","value": "dueTimeKey/desc"},{"name": "Rating Ascending","value": "ratingKey/asc"},{"name": "Rating Descending","value": "ratingKey/desc"},
+			{"name": "Status Ascending","value": "statusKey/asc"},{"name": "Status Descending","value": "statusKey/desc"},{"name": "Employee Ascending","value": "employee/asc"},{"name": "Employee Descending","value": "employee/desc"},{"name": "Country Ascending","value": "country/asc"},{"name": "Country Descending","value": "country/desc"},{"name": "Delivery Unit Ascending","value": "delUnitText/asc"},{"name": "Delivery Unit Descending","value": "delUnitText/desc"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Service Team Visible",
-		"filter": "&ServiceTeamVisible",
+		"filter": "ServiceTeamVisible",
 		"options": [
-			{
-				"name": "True",
-				"value": "true"
-			},
-			{
-				"name": "False",
-				"value": "false"
-			}
+			{"name": "True","value": "true"},{"name": "False","value": "false"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Display Date",
-		"filter": "&disp_date",
+		"filter": "disp_date",
 		"options": [
-			{
-				"name": "Go Live",
-				"value": "gl"
-			},
-			{
-				"name": "Last Changed",
-				"value": "lc"
-			}
+			{"name": "Go Live","value": "gl"},{"name": "Last Changed","value": "lc"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Responsible Empty Only",
-		"filter": "&resp_empty_only",
+		"filter": "resp_empty_only",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Run Title",
-		"filter": "&run_title",
+		"filter": "run_title",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "List View",
-		"filter": "&listView",
+		"filter": "listView",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Created Now Weeks",
-		"filter": "&created",
+		"filter": "created",
 		"type": "input"
 	},
 	{
 		"key": "all",
 		"name": "Created Now Days",
-		"filter": "&created",
+		"filter": "created",
 		"type": "input"
 	},
 	{
 		"key": "all",
 		"name": "Display Name",
-		"filter": "&disp_name",
+		"filter": "disp_name",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Display Phase",
-		"filter": "&disp_phase",
+		"filter": "disp_phase",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	},
 	{
 		"key": "all",
 		"name": "Top Issues",
-		"filter": "&top_issues",
+		"filter": "top_issues",
 		"options": [
-			{
-				"name": "Yes",
-				"value": "yes"
-			},
-			{
-				"name": "No",
-				"value": "no"
-			}
+			{"name": "Yes","value": "yes"},{"name": "No","value": "no"}
 		],
-		"type": "options"
+		"type": "Single Select"
 	}
 ]

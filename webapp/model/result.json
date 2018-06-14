@@ -1,30 +1,3 @@
 [
-	{
-		"name": "Analysis needed",
-		"value": "Z2ZS460001"
-	},
-	{
-		"name": "Action plan provided",
-		"value": "Z2ZS460002"
-	},
-	{
-		"name": "Workaround provided",
-		"value": "Z2ZS460003"
-	},
-	{
-		"name": "Solution provided",
-		"value": "Z2ZS460004"
-	},
-	{
-		"name": "Issue solved follow up needed",
-		"value": "Z2ZS460005"
-	},
-	{
-		"name": "MOD required",
-		"value": "Z2ZS460020"
-	},
-	{
-		"name": "In process OMF",
-		"value": "Z2ZS460030"
-	}
+	{"name": "Analysis needed","value": "Z2ZS460001"},{"name": "Action plan provided","value": "Z2ZS460002"},{"name": "Workaround provided","value": "Z2ZS460003"},{"name": "Solution provided","value": "Z2ZS460004"},{"name": "Issue solved follow up needed","value": "Z2ZS460005"},{"name": "MOD required","value": "Z2ZS460020"},{"name": "In process OMF","value": "Z2ZS460030"}
 ]

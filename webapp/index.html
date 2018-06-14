@@ -5,15 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 
-		<title>DashboardBuilder</title>
+		<title>MDR Dashboard Builder & Analyzer</title>
 
 		<script id="sap-ui-bootstrap"
+<<<<<<< HEAD
+			src="https://sapui5.hana.ondemand.com/1.54.5/resources/sap-ui-core.js"
+=======
 			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+>>>>>>> branch 'master' of https://github.com/lumensequere/lumensequere.github.io.git
 			data-sap-ui-libs="sap.m"
-			data-sap-ui-theme="sap_belize"
+			data-sap-ui-theme="sap_belize_plus"
 			data-sap-ui-compatVersion="edge"
 			data-sap-ui-bindingSyntax="complex"
-			data-sap-ui-preload="sync"
+			data-sap-ui-preload="async"
 			data-sap-ui-resourceroots='{"DashboardBuilder": "./"}'>
 		</script>
 
@@ -27,10 +31,11 @@
 					})
 				}).placeAt("content");
 			});
+			function setFocusOnLoad() {};
 		</script>
 	</head>
 
-	<body class="sapUiBody" id="content" height="90%">
+	<body class="sapUiBody" id="content" height="100%">
 	</body>
 
 </html>

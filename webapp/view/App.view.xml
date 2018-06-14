@@ -1,0 +1,38 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.App" displayBlock="true">
+	<App id="myApp" width="100%" autoFocus="false">
+		<pages>
+			<Page title="MDR Dashboard Builder &amp; Analyzer" id="mainPage" width="100%" enableScrolling="false" showFooter="false" backgroundDesign="Transparent">
+				<subHeader>
+					<Bar id="__bar0" design="Header">
+						<contentMiddle>
+							<Button text="Analyze" width="100px" id="__button0" press="onPress" type="Emphasized">
+								<customData>
+									<core:CustomData id="__data4" key="target" value="analyzePage"/>
+								</customData>
+							</Button>
+							<Button text="Build" width="100px" id="__button1" press="onPress" type="Emphasized">
+								<customData>
+									<core:CustomData id="__data6" key="target" value="buildPage"/>
+								</customData>
+							</Button>
+						</contentMiddle>
+					</Bar>
+				</subHeader>
+				<content>
+					<NavContainer id="appContainer" width="100%" defaultTransitionName="show" autoFocus="false"/>
+				</content>
+				<headerContent>
+					<HBox width="2em" id="__hbox0" justifyContent="SpaceAround" fitContainer="true">
+					    <items>
+					        <core:Icon src="sap-icon://home" size="1.75em" id="overviewIcon" class="overviewButton" press="onPress" tooltip="Overview Page" decorative="false">
+					            <core:customData>
+					                <core:CustomData id="__data19" key="target" value=""/>
+					            </core:customData>
+					        </core:Icon>
+					    </items>
+					</HBox>
+				</headerContent>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,66 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.Analyze">
+	<Page title="Analyze" id="analyzePage" showSubHeader="false" showHeader="false" showFooter="true" enableScrolling="false" width="100%" floatingFooter="true" height="100%" backgroundDesign="Transparent">
+		<content>
+			<VBox id="__vbox0" direction="Column" alignContent="Center" width="auto" renderType="Bare" class="sapUiTinyMargin" height="90%" justifyContent="SpaceBetween" alignItems="Center">
+				<items>
+					<HBox alignContent="Center" direction="Row" width="100%" alignItems="Center" renderType="Bare" class="sapUiSmallMarginBottom sapUiTinyMarginTop">
+						<items>
+							<Label id="inputBoxLabel" text="Insert URL:" vAlign="middle" textAlign="Left" width="9%" class="labelColor"/>
+							<TextArea id="inputBox" wrapping="Hard" growingMaxLines="0" growing="false" cols="0" width="100%" placeholder="i.e. https://pgp.wdf.sap.corp/sap/bc/ui5_ui5/sap/zs_dashboard/f/mdr..." rows="4" textAlign="Begin" showValueStateMessage="false" textDirection="LTR"/>
+							<VBox width="10%" alignContent="Center" alignItems="End" renderType="Bare" direction="Column" justifyContent="Center">
+								<items>
+									<Button text="Submit" width="100px" id="submitButton" press="onSubmit" type="Emphasized"/>
+									<Button text="Clear" width="100px" id="clearButton" press="clearAnalyze" type="Reject"/>
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					<ScrollContainer id="scrollContainer1" width="100%" height="100%" vertical="true">
+						<Table id="filtersTable" alternateRowColors="false">
+							<headerToolbar>
+								<Toolbar>
+									<content>
+										<Title text="Filters" titleStyle="H4"/>
+										<ToolbarSpacer/>
+										<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+									</content>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="16em"/>
+								<Column hAlign="End"/>
+							</columns>
+						</Table>
+						<Table id="paramsTable" alternateRowColors="false">
+							<headerToolbar>
+								<Toolbar>
+									<content>
+										<Title text="Parameters" titleStyle="H4"/>
+										<ToolbarSpacer/>
+										<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+									</content>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="16em"/>
+								<Column hAlign="End"/>
+							</columns>
+						</Table>
+					</ScrollContainer>
+				</items>
+			</VBox>
+		</content>
+		<footer>
+			<Bar id="analyzeBar">
+				<contentLeft>
+					<Label id="mdrLabel" labelFor="urlBox" text="MDR Type:" vAlign="middle" textDirection="LTR" class="sapUiTinyMarginEnd"/>
+					<TextArea id="urlBox" rows="1" cols="23" valueLiveUpdate="true" editable="false" showValueStateMessage="false"/>
+				</contentLeft>
+				<contentRight>
+					<Label id="userFriendlyLabel" text="User Friendly:" class="sapUiTinyMarginEnd"/>
+					<Switch id="userFriendlySwitch" name="User Friendly" change="modifyObj"/>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

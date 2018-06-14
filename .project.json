@@ -6,7 +6,7 @@
   "generation": [
     {
       "templateId": "ui5template.basicSAPUI5ApplicationProject",
-      "templateVersion": "1.32.0",
+      "templateVersion": "1.54.5",
       "dateTimeStamp": "Wed, 13 Jan 2016 12:56:36 GMT"
     },
     {
@@ -22,7 +22,7 @@
   ],
   "translation": {
     "translationDomain": "",
-    "supportedLanguages": "en,fr,de",
+    "supportedLanguages": "en",
     "defaultLanguage": "en",
     "defaultI18NPropertyFile": "i18n.properties",
     "resourceModelName": "i18n"
@@ -34,5 +34,10 @@
     "loadJSONFiles": true,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
+  },
+  "hcpdeploy": {
+    "account": "i858475trial",
+    "name": "mccdashboardbuilder",
+    "lastVersionWeTriedToDeploy": "1.0.7"
   }
 }
