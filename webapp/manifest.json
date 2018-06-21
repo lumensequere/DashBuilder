@@ -14,48 +14,12 @@
 				"uri": "model/templates.json",
 				"type": "JSON"
 			},
-			"_priority": {
-				"uri": "model/priority.json",
-				"type": "JSON"
-			},
-			"_result": {
-				"uri": "model/result.json",
-				"type": "JSON"
-			},
-			"_rating": {
-				"uri": "model/rating.json",
-				"type": "JSON"
-			},
-			"_serviceorgs": {
-				"uri": "model/serviceorgs.json",
-				"type": "JSON"
-			},
-			"_activitytypes": {
-				"uri": "model/activitytypes.json",
-				"type": "JSON"
-			},
-			"_category": {
-				"uri": "model/category.json",
-				"type": "JSON"
-			},
-			"_casetype": {
-				"uri": "model/casetype.json",
-				"type": "JSON"
-			},
 			"_filters": {
 				"uri": "model/filters.json",
 				"type": "JSON"
 			},
-			"_serviceTeams": {
-				"uri": "model/serviceTeams.json",
-				"type": "JSON"
-			},
 			"_dashboards": {
 				"uri": "model/dashboards.json",
-				"type": "JSON"
-			},
-			"_status": {
-				"uri": "model/status.json",
 				"type": "JSON"
 			}
 		}
@@ -109,47 +73,9 @@
 					"bundleName": "DashboardBuilder.i18n.i18n"
 				}
 			},
-			"": {
-				"dataSource": "mainService"
-			},
 			"templates": {
 				"type": "sap.ui.model.json.JSONModel",
 				"dataSource": "_templates",
-				"preload": true
-			},
-			"priority": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_priority",
-				"preload": true
-			},
-			"result": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_result",
-				"preload": true
-			},
-			"rating": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_rating",
-				"preload": true
-			},
-			"serviceorgs": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_serviceorgs",
-				"preload": true
-			},
-			"activitytypes": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_activitytypes",
-				"preload": true
-			},
-			"category": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_category",
-				"preload": true
-			},
-			"casetype": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_casetype",
 				"preload": true
 			},
 			"filters": {
@@ -157,19 +83,9 @@
 				"dataSource": "_filters",
 				"preload": true
 			},
-			"serviceTeams": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_serviceTeams",
-				"preload": true
-			},
 			"dashboards": {
 				"type": "sap.ui.model.json.JSONModel",
 				"dataSource": "_dashboards",
-				"preload": true
-			},
-			"status": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "_status",
 				"preload": true
 			}
 		},
@@ -190,46 +106,57 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"viewPath": "DashboardBuilder.view",
-				"controlId": "appContainer",
-				"controlAggregation": "pages",
+				"controlId": "mainPage",
 				"transition": "slide",
+				"bypassed": {
+					"target": "home"
+				},
 				"async": true
 			},
-			"routes": [
-				{
-					"pattern": "",
-					"name": "overviewPage",
-					"target": "overview"
-				},
-				{
-					"pattern": "analyze",
-					"name": "analyzePage",
-					"target": "analyze"
-				},
-				{
-					"pattern": "build",
-					"name": "buildPage",
-					"target": "build"
-				}
-			],
+			"routes": [{
+				"pattern": ":?query:",
+				"name": "App",
+				"target": "App"
+			}, {
+				"pattern": "home",
+				"name": "Home",
+				"target": "Home"
+			}, {
+				"pattern": "analyze",
+				"name": "Analyze",
+				"target": "Analyze"
+			}, {
+				"pattern": "build",
+				"name": "Build",
+				"target": "Build"
+			}],
 			"targets": {
-				"overview": {
-					"viewId": "overview",
+				"App": {
+					"viewPath": "DashboardBuilder.view",
+					"viewName": "App",
+					"controlId": "app",
+					"controlAggregation": "pages"
+				},
+				"Home": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
 					"viewName": "Overview",
-					"viewLevel": 1,
-					"transition": "slide"
+					"controlId": "homeTab",
+					"controlAggregation": "content"
 				},
-				"analyze": {
-					"viewId": "analyze",
+				"Analyze": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
 					"viewName": "Analyze",
-					"viewLevel": 2,
-					"transition": "slide"
+					"controlId": "analyzeTab",
+					"controlAggregation": "content"
 				},
-				"build": {
-					"viewId": "build",
+				"Build": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
 					"viewName": "Build",
-					"viewLevel": 3,
-					"transition": "slide"
+					"controlId": "buildTab",
+					"controlAggregation": "content"
 				}
 			}
 		}

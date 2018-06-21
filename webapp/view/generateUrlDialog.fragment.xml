@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	<Dialog id="generatedUrlDialog" title="Generated URL" width="100%">
+	<Dialog id="generateUrlDialog" title="Generated URL" width="100%">
 		<content>
 			<VBox direction="Column" id="inputVbox" alignContent="Center" alignItems="Center" justifyContent="Center" class="sapUiSmallMargin">
 		        <items>

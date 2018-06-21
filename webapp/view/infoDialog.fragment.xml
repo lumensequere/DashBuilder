@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" height="100%" displayBlock="true">
+	<Dialog title="Information" id="infoDialog" verticalScrolling="false" horizontalScrolling="false" class="sapUiSizeCompact">
+		<content>
+			<VBox alignContent="Center" alignItems="Center" justifyContent="Center" class="sapUiResponsiveMargin">
+				<core:Icon src="sap-icon://puzzle" size="6rem" color="#3F5161" class="sapUiSmallMarginBottom">
+					<core:layoutData>
+						<FlexItemData growFactor="1"/>
+					</core:layoutData>
+				</core:Icon>
+				<FormattedText htmlText="&lt;h2&gt;&lt;strong&gt;MDR Dashboard Builder &amp; Analyzer&lt;/strong&gt;&lt;/h2&gt;"/>
+				<FormattedText htmlText="&lt;h6&gt;Version 1.1.0&lt;/h6&gt;"/>
+				<FormattedText htmlText="&lt;p&gt;For feedback and reporting bug/errors, please send an email to lucas.eron@sap.com.&lt;/p&gt;"/>
+			</VBox>
+			<!--<MessagePage title="info" id="infoPage" showHeader="false" text="MDR Dashboard Builder &amp; Analyzer" enableFormattedText="true" description="&lt;p&gt;The web-application version is 1.1.0.&lt;/p&gt;For feedback and reporting bug/errors, please send an email to lucas.eron@sap.com." icon="sap-icon://puzzle" backgroundDesign="Transparent" class="sapUiIcon"/>-->
+		</content>
+		<endButton>
+			<Button id="closeButton" text="Close" press="closeInfoDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	<Dialog id="inputDialog" title="Input Options" width="100%">
+	<Dialog id="secondSelectionInput" title="Input Options" width="100%">
 		<VBox direction="Column" id="inputVbox" alignContent="Center" alignItems="Center" justifyContent="Center" class="sapUiSmallMargin">
 	        <items>
 	            <Label text="Insert the value below:" id="topLabel" design="Bold"/>

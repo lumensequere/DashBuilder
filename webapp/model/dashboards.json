@@ -12,57 +12,7 @@
 	{
 		"name": "Activities",
 		"key": "mdr2",
-		"id": "2",
-		"options": [
-			{
-				"name": "PERC",
-				"type": "ZS88"
-			},
-			{
-				"name": "CIC Request",
-				"type": "ZS53"
-			},
-			{
-				"name": "Escal Backoffice Request",
-				"type": "ZS51"
-			},
-			{
-				"name": "Solman Task",
-				"type": "ZS49"
-			},
-			{
-				"name": "Service and Support Report",
-				"type": "ZS47"
-			},
-			{
-				"name": "Request for Backoffice Assistance",
-				"type": "ZS46"
-			},
-			{
-				"name": "Request for Assistance",
-				"type": "ZS43"
-			},
-			{
-				"name": "Requests for onsite service delivery",
-				"type": "ZS42"
-			},
-			{
-				"name": "Customer Screening",
-				"type": "ZS41"
-			},
-			{
-				"name": "Task",
-				"type": "ZS35"
-			},
-			{
-				"name": "Escalation Request",
-				"type": "ZS31"
-			},
-			{
-				"name": "General Activity",
-				"type": "ZS03"
-			}
-		]
+		"id": "2"
 	},
 	{
 		"name": "Top Issues",

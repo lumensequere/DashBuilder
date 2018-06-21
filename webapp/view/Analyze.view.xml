@@ -1,60 +1,78 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.Analyze">
-	<Page title="Analyze" id="analyzePage" showSubHeader="false" showHeader="false" showFooter="true" enableScrolling="false" width="100%" floatingFooter="true" height="100%" backgroundDesign="Transparent">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%"
+	controllerName="DashboardBuilder.controller.Analyze">
+	<Page title="Analyze" id="analyzePage" showSubHeader="false" showHeader="false" showFooter="true" enableScrolling="false" width="100%"
+		floatingFooter="true" height="100%" backgroundDesign="Transparent">
 		<content>
-			<VBox id="__vbox0" direction="Column" alignContent="Center" width="auto" renderType="Bare" class="sapUiTinyMargin" height="90%" justifyContent="SpaceBetween" alignItems="Center">
+			<VBox id="__vbox0" direction="Column" alignContent="Center" width="auto" class="sapUiTinyMargin" height="90%" alignItems="Center"
+				renderType="Bare">
 				<items>
-					<HBox alignContent="Center" direction="Row" width="100%" alignItems="Center" renderType="Bare" class="sapUiSmallMarginBottom sapUiTinyMarginTop">
+					<HBox alignContent="Center" direction="Row" width="100%" alignItems="Center" class="sapUiSmallMarginBottom sapUiTinyMarginTop"
+						justifyContent="SpaceAround" renderType="Div">
 						<items>
-							<Label id="inputBoxLabel" text="Insert URL:" vAlign="middle" textAlign="Left" width="9%" class="labelColor"/>
-							<TextArea id="inputBox" wrapping="Hard" growingMaxLines="0" growing="false" cols="0" width="100%" placeholder="i.e. https://pgp.wdf.sap.corp/sap/bc/ui5_ui5/sap/zs_dashboard/f/mdr..." rows="4" textAlign="Begin" showValueStateMessage="false" textDirection="LTR"/>
-							<VBox width="10%" alignContent="Center" alignItems="End" renderType="Bare" direction="Column" justifyContent="Center">
+							<Label id="inputBoxLabel" text="Insert URL:" vAlign="middle" textAlign="Left" width="100%" class="labelColor"/>
+							<HBox direction="Row" width="100%" height="100%" justifyContent="Center" alignItems="Center" alignContent="Center" renderType="Bare"
+								class="sapUiTinyMarginBeginEnd">
 								<items>
-									<Button text="Submit" width="100px" id="submitButton" press="onSubmit" type="Emphasized"/>
-									<Button text="Clear" width="100px" id="clearButton" press="clearAnalyze" type="Reject"/>
+									<TextArea id="inputBox" wrapping="Hard" growingMaxLines="0" growing="false" cols="0"
+										placeholder="i.e. https://pgp.wdf.sap.corp/sap/bc/ui5_ui5/sap/zs_dashboard/f/mdr..." rows="4" textAlign="Begin"
+										showValueStateMessage="false" textDirection="LTR" width="100%" height="100%"/>
+								</items>
+							</HBox>
+							<VBox alignContent="Center" alignItems="Center" direction="Column" justifyContent="Center" width="auto" height="100%">
+								<items>
+									<Button id="submitButton" press="onSubmit" width="100%" icon="sap-icon://begin" tooltip="Submit" type="Transparent"/>
+									<Button id="clearButton" press="clearAnalyze" type="Transparent" width="100%" icon="sap-icon://delete" tooltip="Clear"/>
 								</items>
 							</VBox>
 						</items>
 					</HBox>
-					<ScrollContainer id="scrollContainer1" width="100%" height="100%" vertical="true">
-						<Table id="filtersTable" alternateRowColors="false">
-							<headerToolbar>
-								<Toolbar>
-									<content>
-										<Title text="Filters" titleStyle="H4"/>
-										<ToolbarSpacer/>
-										<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
-									</content>
-								</Toolbar>
-							</headerToolbar>
-							<columns>
-								<Column width="16em"/>
-								<Column hAlign="End"/>
-							</columns>
-						</Table>
-						<Table id="paramsTable" alternateRowColors="false">
-							<headerToolbar>
-								<Toolbar>
-									<content>
-										<Title text="Parameters" titleStyle="H4"/>
-										<ToolbarSpacer/>
-										<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
-									</content>
-								</Toolbar>
-							</headerToolbar>
-							<columns>
-								<Column width="16em"/>
-								<Column hAlign="End"/>
-							</columns>
-						</Table>
-					</ScrollContainer>
+					<Panel id="resultsPanel" expandable="true" expanded="false" headerText="Results" width="100%" height="calc(100% - 48px)">
+						<content>
+							<Table id="filtersTable" alternateRowColors="false">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Filters" titleStyle="H4"/>
+											<ToolbarSpacer/>
+											<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="16em"/>
+									<Column hAlign="End"/>
+								</columns>
+							</Table>
+							<Table id="paramsTable" alternateRowColors="false">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Parameters" titleStyle="H4"/>
+											<ToolbarSpacer/>
+											<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="16em"/>
+									<Column hAlign="End"/>
+								</columns>
+							</Table>
+						</content>
+					</Panel>
 				</items>
 			</VBox>
 		</content>
 		<footer>
 			<Bar id="analyzeBar">
 				<contentLeft>
-					<Label id="mdrLabel" labelFor="urlBox" text="MDR Type:" vAlign="middle" textDirection="LTR" class="sapUiTinyMarginEnd"/>
-					<TextArea id="urlBox" rows="1" cols="23" valueLiveUpdate="true" editable="false" showValueStateMessage="false"/>
+					<HBox alignContent="Center" alignItems="Center" justifyContent="Center" renderType="Bare" height="100%">
+						<items>
+							<Label id="mdrLabel" labelFor="urlBox" text="MDR Type:" vAlign="middle" textDirection="LTR" class="sapUiTinyMarginEnd"/>
+							<TextArea id="urlBox" showValueStateMessage="false" textDirection="LTR" textAlign="Center" wrapping="Off" cols="1" rows="1"
+								valueLiveUpdate="true" height="100%" maxLength="30" editable="false" growing="true" visible="false"/>
+						</items>
+					</HBox>
 				</contentLeft>
 				<contentRight>
 					<Label id="userFriendlyLabel" text="User Friendly:" class="sapUiTinyMarginEnd"/>

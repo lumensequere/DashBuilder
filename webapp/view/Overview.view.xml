@@ -1,19 +1,44 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.Overview">
-	<Page title="Page" id="overviewPage" showFooter="true" showHeader="false" width="auto" enableScrolling="false" floatingFooter="false" showSubHeader="false" backgroundDesign="Transparent">
+<mvc:View height="100%" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DashboardBuilder.controller.Overview">
+	<Page title="Page" id="overviewPage" showFooter="false" showHeader="false" height="100%" width="auto" enableScrolling="true" floatingFooter="false" showSubHeader="false" backgroundDesign="Transparent">
 		<content>
-			<VBox width="100%" height="100%" id="__vbox1" alignContent="Center" alignItems="Center" justifyContent="Center" direction="Column">
+			<VBox width="100%" id="__vbox1" alignContent="Center" alignItems="Center" direction="Column">
 				<items>
-					<FormattedText htmlText="&lt;strong&gt;Welcome to the MDR Dashboard Builder &amp; Analyzer&lt;/strong&gt;" width="100%" class="sapUiMediumMarginBottom"/>
-					<FormattedText htmlText="Use the buttons at the top of the page to navigate between URL analyzing and building.&lt;br&gt;For more information about dashboard creation, best practices and examples, please have a look in the Links button at the footer of this page." width="100%" class="textCenter"/>
+					<VBox width="100%" id="__vbox23" alignContent="Center" alignItems="Center" direction="Column">
+						<items>
+							<FormattedText htmlText="&lt;strong&gt;&lt;h1&gt;Welcome to the MDR Dashboard Builder &amp; Analyzer&lt;/h1&gt;&lt;/strong&gt;" class="textCenter sapUiLargeMarginTopBottom"/>
+							<FormattedText htmlText="&lt;p&gt;Use the tabs at the top of the upper left corner of the page to navigate between URL analyzing and building.&lt;br&gt;&lt;/p&gt;For more information about dashboards including available filters, how to create URLs, dashboard URL best practices and some examples, please click on the 'link' icon at the upper right side of this page.&lt;br&gt;&lt;br&gt;&lt;p&gt;In case you need guidance to use this web-application, click on the tiles below!&lt;/p&gt;" class="sapUiSmallMarginBeginEnd sapUiLargeMarginBottom"/>
+							<HBox width="100%" id="overviewTilesHBox" alignContent="Center" alignItems="Center" justifyContent="SpaceAround" direction="Row" class="sapUiSmallMargin">
+								<items>
+									<GenericTile id="analyzeTile" frameType="TwoByOne" backgroundImage="images/Tile_AnalyzeURL.png" class="tileHomePage" tooltip="Analyze Guide" press="onPress">
+										<TileContent>
+											<NewsContent contentText="Simple guide to analyze your URL in MDR DB&amp;A" subheader="Click here"/>
+										</TileContent>
+									</GenericTile>
+									<GenericTile id="buildTile" frameType="TwoByOne" backgroundImage="images/Tile_BuildURL.png" class="tileHomePage" tooltip="Build Guide" press="onPress">
+										<TileContent>
+											<NewsContent contentText="Simple guide to build your own URL in MDR DB&amp;A" subheader="Click here"/>
+										</TileContent>
+									</GenericTile>
+									<GenericTile id="dbstoolsTile" frameType="TwoByOne" backgroundImage="images/Tile_DBSJam.png" class="tileHomePage" tooltip="MCC Tools Page" press="onPress">
+										<TileContent>
+											<NewsContent contentText="DBS MCC-tools Jam Page" subheader="Click here for everything related to dashboards"/>
+										</TileContent>
+									</GenericTile>
+								</items>
+							</HBox>
+							<HBox width="100%" id="overviewTilesHBox2" alignContent="Center" alignItems="Center" justifyContent="SpaceAround" direction="Row" class="sapUiResponsiveMargin">
+								<items>
+									<GenericTile id="appWikiTile" frameType="TwoByOne" backgroundImage="images/Tile_MainWiki.png" class="tileHomePage" tooltip="Main Wiki" press="onPress">
+										<TileContent>
+											<NewsContent contentText="MDR Dashboard Builder &amp; Analyzer Wiki" subheader="Click here for updates and documentation"/>
+										</TileContent>
+									</GenericTile>
+								</items>
+							</HBox>
+						</items>
+					</VBox>
 				</items>
 			</VBox>
 		</content>
-		<footer>
-			<Bar id="overviewBar" design="Auto">
-				<contentLeft>
-					<Button text="Links" width="100px" id="__button2" icon="sap-icon://chain-link" press="openLinksDialog"/>
-				</contentLeft>
-			</Bar>
-		</footer>
 	</Page>
 </mvc:View>

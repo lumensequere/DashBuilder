@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-	<SelectDialog id="selectionDialog" title="Select Filter" confirm="handleClose" cancel="handleClose" items="{ path: '/' }">
+	<SelectDialog id="firstSelection" title="Select Filter" confirm="handleClose" cancel="handleClose" items="{ path: '/' }">
 		<StandardListItem
 			title="{name}"
 			description="{filter}"

@@ -1,6 +1,6 @@
 sap.ui.define([
-	"DashboardBuilder/controller/BaseController", "sap/m/MessageToast"
-], function(BaseController, MessageToast) {
+	"DashboardBuilder/controller/BaseController", "sap/m/MessageToast", "sap/ui/model/Filter", "sap/ui/model/FilterOperator"
+], function(BaseController, MessageToast, Filter, FilterOperator) {
 	"use strict";
 	return BaseController.extend("DashboardBuilder.controller.Build", {
 		onInit: function() {
@@ -9,6 +9,17 @@ sap.ui.define([
 			this.oModel = new sap.ui.model.json.JSONModel();
 			this.oModel.setData(this.itemObj);
 			this.itemArray = [];
+		},
+		onSearch: function(event) {
+			var query = event.getParameter("value");
+			var filter = new Filter({
+				filters: [
+					new Filter("name", FilterOperator.Contains, query),
+					new Filter("value", FilterOperator.Contains, query)
+				],
+				and: false
+			});
+			event.getSource().getBinding("items").filter([filter]);
 		},
 		dashSelection: function() {
 			this.itemObj = {};
@@ -73,7 +84,7 @@ sap.ui.define([
 
 			// if generated url dialog doesn't exists, creates it
 			if (!this.genDialog) {
-				this.genDialog = sap.ui.xmlfragment("DashboardBuilder.view.generation", this);
+				this.genDialog = sap.ui.xmlfragment("DashboardBuilder.view.generateUrlDialog", this);
 			}
 
 			// MAGIC and then dialog opening
@@ -85,14 +96,14 @@ sap.ui.define([
 		// handleFilterButtonPress: in "Build" page, this function is called when "Add Filter" button is pressed, filters only dashboard filters for the selected type
 		handleFilterButtonPress: function() {
 			if (!this.oDialog) {
-				this.oDialog = sap.ui.xmlfragment("DashboardBuilder.view.selectionDialog", this);
+				this.oDialog = sap.ui.xmlfragment("DashboardBuilder.view.firstSelection", this);
 				this.oDialog.setModel(this.getOwnerComponent().getModel("filters"));
 			}
 
 			var oComboBox = this.getView().byId("dashType");
 			var mdrTypeKey = oComboBox.getSelectedKey();
 
-			this.oDialog.getBinding("items").filter([new sap.ui.model.Filter("key", "EQ", mdrTypeKey)]);
+			this.oDialog.getBinding("items").filter([new Filter("key", "EQ", mdrTypeKey)]);
 
 			jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this.oDialog);
 			this.getView().addDependent(this.oDialog);
@@ -101,7 +112,7 @@ sap.ui.define([
 		// handleParameterButtonPress: in "Build" page, this function is called when "Add Parameter" button is pressed, filters the parameters from the filters.json file (all parameters use the key "all")
 		handleParameterButtonPress: function() {
 			if (!this.oDialog) {
-				this.oDialog = sap.ui.xmlfragment("DashboardBuilder.view.selectionDialog", this);
+				this.oDialog = sap.ui.xmlfragment("DashboardBuilder.view.firstSelection", this);
 				this.oDialog.setModel(this.getOwnerComponent().getModel("filters"));
 			}
 
@@ -115,7 +126,7 @@ sap.ui.define([
 			if (!this.templatesDialog) {
 				this.templatesDialog = sap.ui.xmlfragment("DashboardBuilder.view.templates", this);
 				this.getView().addDependent(this.templatesDialog);
-				this.templatesDialog.setModel(this.getOwnerComponent().getModel("templates"));
+				//this.templatesDialog.setModel(this.getOwnerComponent().getModel("templates"));
 				this.templatesDialog.open();
 			}
 		},
@@ -287,10 +298,11 @@ sap.ui.define([
 			if (!this.secDialog) {
 				if (data.info === "Multi Select" || data.info === "Single Select") {
 					if (data.info === "Multi Select") {
-						this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.select", this);
+						this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.secondSelectionMulti", this);
 					} // if multi select
 					else {
-						this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.options", this);
+						this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.secondSelectionMulti", this);
+						this.secDialog.setMultiSelect(false);
 					} // else it's single select
 
 					var oModel = new sap.ui.model.json.JSONModel();
@@ -301,7 +313,7 @@ sap.ui.define([
 					oModel.setData(sPath);
 					this.secDialog.setModel(oModel);
 				} else {
-					this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.input", this);
+					this.secDialog = sap.ui.xmlfragment("DashboardBuilder.view.secondSelectionInput", this);
 				}
 			}
 			jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this.secDialog);

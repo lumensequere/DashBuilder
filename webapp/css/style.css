@@ -1,10 +1,14 @@
-/* Enter your custom styles here */
+/* Don't change the classes below */
 .sapMShellBrandingBar {
     height: 0;
 }
 .sapMPageHeader::before {
     border-top-width: 0rem;
 }
+:focus {
+	outline: none;
+}
+/* You can create/change classes below here */
 .sapMShellContent, .sapMApp, .sapMMessagePage {
 	background: transparent;
 }
@@ -21,4 +25,10 @@
 .sapMMessagePage .sapMMessagePageInner .sapUiIcon::before {
 	color: white;
 	text-shadow: 0.5px 0.5px 3px #333333;
+}
+.tileHomePage {
+	background-size: cover;
+}
+#firstSelection-subHeader-BarPH {
+	display: none;
 }

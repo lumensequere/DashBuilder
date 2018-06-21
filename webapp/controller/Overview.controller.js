@@ -1,21 +1,27 @@
-sap.ui.define(["DashboardBuilder/controller/BaseController"], function(BaseController) {
+sap.ui.define([
+	"DashboardBuilder/controller/BaseController"
+], function(BaseController) {
 	"use strict";
 	return BaseController.extend("DashboardBuilder.controller.Overview", {
-		/**
-		 *@memberOf DashboardBuilder.controller.View1
-		 */
-		openLinksDialog: function() {
-			if (!this.linksDialog) {
-				this.linksDialog = sap.ui.xmlfragment("DashboardBuilder.view.links", this);
-				this.getView().addDependent(this.linksDialog);
-				this.linksDialog.open();
-			}
-		},
-		// when closed, the links dialog gets destroyed
-		closeLinksDialog: function() {
-			if (this.linksDialog) {
-				this.linksDialog.destroy(true);
-				delete this.linksDialog;
+		onPress: function(evt) {
+			var oTile = evt.getSource(),
+				sTileName = oTile.getTooltip();
+			
+			switch (sTileName) {
+				case "Analyze Guide":
+					window.open(""); // carousel guide here
+					break;
+				case "Build Guide":
+					window.open(""); // carousel guide here
+					break;
+				case "MCC Tools Page":
+					window.open("https://jam4.sapjam.com/groups/5LnWdLXIx1B6iNVAa24kiC/overview_page/8fqQOTVX7JN2x1D21tPyZl");
+					break;
+				case "Main Wiki":
+					window.open("https://jam4.sapjam.com/wiki/show/rZ5vCYbqA6bRxCuLUv5Hp4");
+					break;
+				default:
+					break;
 			}
 		}
 	});
